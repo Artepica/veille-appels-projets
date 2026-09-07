@@ -667,42 +667,77 @@ relire et personnaliser avant tout envoi."""
 
 def generer_dossier_brouillons(nouveaux):
     """
-    Génère un fichier Markdown regroupant les brouillons de candidature
-    pour les nouveaux appels à projets les plus pertinents (limité à
-    MAX_BROUILLONS pour maîtriser le coût et le temps d'exécution).
-    Retourne le chemin du fichier généré, ou None si rien à générer.
+    Génère un document Word (.docx) regroupant les brouillons de
+    candidature pour les nouveaux appels à projets les plus pertinents
+    (limité à MAX_BROUILLONS pour maîtriser le coût et le temps
+    d'exécution). Retourne le chemin du fichier généré, ou None si rien
+    à générer.
     """
     if not ANTHROPIC_API_KEY or not nouveaux:
         return None
 
-    a_traiter = sorted(nouveaux, key=lambda x: x.get("score", 0), reverse=True)[:MAX_BROUILLONS]
-    sections = [
-        "# Brouillons de candidature — Art'Epica",
-        f"Générés automatiquement le {datetime.date.today().strftime('%d/%m/%Y')}.",
-        "⚠️ Ce sont des PREMIERS JETS générés par IA : à relire, vérifier et "
-        "personnaliser avant tout envoi — ne jamais soumettre tel quel.",
-        "",
-    ]
+    from docx import Document
+    from docx.shared import Pt, RGBColor
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
 
+    a_traiter = sorted(nouveaux, key=lambda x: x.get("score", 0), reverse=True)[:MAX_BROUILLONS]
+
+    document = Document()
+
+    titre = document.add_heading("Brouillons de candidature — Art'Epica", level=0)
+
+    intro = document.add_paragraph()
+    intro.add_run(
+        f"Générés automatiquement le {datetime.date.today().strftime('%d/%m/%Y')}. "
+    )
+    avertissement = intro.add_run(
+        "⚠️ Ce sont des PREMIERS JETS générés par IA : à relire, vérifier et "
+        "personnaliser avant tout envoi — ne jamais les soumettre tels quels."
+    )
+    avertissement.bold = True
+    avertissement.font.color.rgb = RGBColor(0xA8, 0x2A, 0x2A)
+
+    nb_generes = 0
     for item in a_traiter:
         brouillon = generer_brouillon_ia(item)
         if not brouillon:
             continue
-        sections.append(f"## {item['titre']}")
-        sections.append(f"*Financeur : {item.get('financeur') or 'non identifié'} — "
-                         f"[Lien source]({item.get('lien')})*")
-        sections.append("")
-        sections.append(brouillon)
-        sections.append("\n---\n")
+        nb_generes += 1
+
+        document.add_heading(item["titre"], level=1)
+
+        meta = document.add_paragraph()
+        run_meta = meta.add_run(
+            f"Financeur : {item.get('financeur') or 'non identifié'}  —  "
+            f"Source : {item.get('lien')}"
+        )
+        run_meta.italic = True
+        run_meta.font.size = Pt(9)
+
+        # Le texte généré par l'IA est en Markdown simple (titres ##, listes
+        # à puces -). On le convertit en paragraphes/puces Word plutôt que
+        # de laisser les symboles bruts.
+        for ligne in brouillon.split("\n"):
+            ligne_nettoyee = ligne.strip()
+            if not ligne_nettoyee:
+                continue
+            if ligne_nettoyee.startswith("#"):
+                document.add_heading(ligne_nettoyee.lstrip("#").strip(), level=2)
+            elif ligne_nettoyee.startswith(("- ", "* ")):
+                document.add_paragraph(ligne_nettoyee[2:].strip(), style="List Bullet")
+            else:
+                document.add_paragraph(ligne_nettoyee)
+
+        document.add_page_break()
+
         time.sleep(1)  # on reste raisonnable sur le rythme des appels API
 
-    if len(sections) <= 4:  # rien n'a été généré avec succès
+    if nb_generes == 0:
         return None
 
-    chemin = os.path.join(DOSSIER_DONNEES, "brouillons_candidature.md")
+    chemin = os.path.join(DOSSIER_DONNEES, "brouillons_candidature.docx")
     os.makedirs(DOSSIER_DONNEES, exist_ok=True)
-    with open(chemin, "w", encoding="utf-8") as f:
-        f.write("\n".join(sections))
+    document.save(chemin)
     return chemin
 
 
@@ -739,8 +774,11 @@ def envoyer_email(nouveaux, chemin_dashboard, chemin_brouillons=None):
 
     if chemin_brouillons and os.path.exists(chemin_brouillons):
         with open(chemin_brouillons, "rb") as f:
-            piece_jointe = MIMEApplication(f.read(), Name="brouillons_candidature.md")
-        piece_jointe["Content-Disposition"] = 'attachment; filename="brouillons_candidature.md"'
+            piece_jointe = MIMEApplication(
+                f.read(),
+                _subtype="vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        piece_jointe["Content-Disposition"] = 'attachment; filename="brouillons_candidature.docx"'
         message.attach(piece_jointe)
 
     try:
