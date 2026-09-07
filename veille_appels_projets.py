@@ -35,6 +35,7 @@ import hashlib
 import datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 
 import requests
 from bs4 import BeautifulSoup
@@ -109,6 +110,28 @@ EMAIL_DESTINATAIRE = os.environ.get("VEILLE_EMAIL_TO")
 # Netlify (optionnel — voir README.md § "Mise en ligne sur Netlify")
 NETLIFY_TOKEN = os.environ.get("VEILLE_NETLIFY_TOKEN")
 NETLIFY_SITE_ID = os.environ.get("VEILLE_NETLIFY_SITE_ID")
+
+# Génération de brouillons de dossier de candidature par IA (optionnel —
+# voir README.md § "Générer des brouillons de candidature")
+ANTHROPIC_API_KEY = os.environ.get("VEILLE_ANTHROPIC_API_KEY")
+ANTHROPIC_MODELE = os.environ.get("VEILLE_ANTHROPIC_MODELE", "claude-haiku-4-5-20251001")
+MAX_BROUILLONS = int(os.environ.get("VEILLE_MAX_BROUILLONS", "10"))
+
+# Profil d'Art'Epica utilisé pour personnaliser chaque brouillon. À ajuster
+# librement si l'activité de l'association évolue.
+PROFIL_ARTEPICA = """
+Art'Epica est une jeune association basée dans les Monts du Lyonnais
+(Saint-Laurent-de-Chamousset et alentours). Elle propose : de l'art-thérapie
+et de la médiation artistique (ateliers créatifs à visée thérapeutique),
+des groupes de parole pour lutter contre l'isolement, des actions de
+prévention (harcèlement, anxiété, burn-out) et des formations, ainsi que
+des projets d'expression artistique avec des jeunes (photographie,
+écriture, vidéo). Elle intervient auprès d'enfants, d'adolescents, de
+familles, d'entreprises et de collectivités, avec un ancrage rural fort.
+Son projet "Regards Connectés" (jeunes et smartphone, exposition photo) a
+reçu le prix coup de cœur de la caisse locale du Crédit Agricole de
+Saint-Laurent-de-Chamousset.
+""".strip()
 
 ENTETES_HTTP = {
     "User-Agent": "ArtEpica-VeilleAppelsProjets/1.0 (usage associatif non commercial)"
@@ -579,10 +602,115 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
 
 
 # ---------------------------------------------------------------------------
+# BROUILLONS DE CANDIDATURE PAR IA (optionnel)
+# ---------------------------------------------------------------------------
+
+def generer_brouillon_ia(item):
+    """
+    Demande à l'API Claude un brouillon de lettre de motivation + une
+    checklist des pièces généralement demandées, adaptés à cet appel à
+    projets précis et au profil d'Art'Epica.
+
+    Retourne le texte généré (str), ou None si non configuré / en erreur.
+    ⚠️ Ce texte est un PREMIER JET à relire et personnaliser avant tout
+    envoi — jamais à soumettre tel quel.
+    """
+    if not ANTHROPIC_API_KEY:
+        return None
+
+    prompt = f"""Voici le profil de l'association qui candidate :
+
+{PROFIL_ARTEPICA}
+
+Voici l'appel à projets détecté :
+- Titre : {item['titre']}
+- Financeur : {item.get('financeur') or '(non identifié, à vérifier)'}
+- Résumé : {item.get('resume') or '(non disponible, à vérifier sur le site source)'}
+- Lien : {item.get('lien')}
+
+Rédige, en français :
+1. Un brouillon de lettre de motivation (250-350 mots) reliant concrètement
+   l'activité d'Art'Epica à cet appel précis. Ton professionnel et sincère,
+   pas de formules creuses. Termine par une formule de politesse simple.
+2. Une checklist des pièces généralement demandées pour ce type d'appel à
+   projets (statuts, RIB, budget prévisionnel, etc.), sous forme de liste
+   à puces.
+
+Précise en une phrase, au tout début, qu'il s'agit d'un brouillon à
+relire et personnaliser avant tout envoi."""
+
+    try:
+        reponse = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": ANTHROPIC_MODELE,
+                "max_tokens": 1500,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+            timeout=60,
+        )
+        reponse.raise_for_status()
+        donnees = reponse.json()
+        return "".join(
+            bloc.get("text", "") for bloc in donnees.get("content", [])
+            if bloc.get("type") == "text"
+        ).strip()
+    except requests.RequestException as e:
+        print(f"[Brouillon IA] Erreur pour '{item['titre']}' : {e}")
+        return None
+
+
+def generer_dossier_brouillons(nouveaux):
+    """
+    Génère un fichier Markdown regroupant les brouillons de candidature
+    pour les nouveaux appels à projets les plus pertinents (limité à
+    MAX_BROUILLONS pour maîtriser le coût et le temps d'exécution).
+    Retourne le chemin du fichier généré, ou None si rien à générer.
+    """
+    if not ANTHROPIC_API_KEY or not nouveaux:
+        return None
+
+    a_traiter = sorted(nouveaux, key=lambda x: x.get("score", 0), reverse=True)[:MAX_BROUILLONS]
+    sections = [
+        "# Brouillons de candidature — Art'Epica",
+        f"Générés automatiquement le {datetime.date.today().strftime('%d/%m/%Y')}.",
+        "⚠️ Ce sont des PREMIERS JETS générés par IA : à relire, vérifier et "
+        "personnaliser avant tout envoi — ne jamais soumettre tel quel.",
+        "",
+    ]
+
+    for item in a_traiter:
+        brouillon = generer_brouillon_ia(item)
+        if not brouillon:
+            continue
+        sections.append(f"## {item['titre']}")
+        sections.append(f"*Financeur : {item.get('financeur') or 'non identifié'} — "
+                         f"[Lien source]({item.get('lien')})*")
+        sections.append("")
+        sections.append(brouillon)
+        sections.append("\n---\n")
+        time.sleep(1)  # on reste raisonnable sur le rythme des appels API
+
+    if len(sections) <= 4:  # rien n'a été généré avec succès
+        return None
+
+    chemin = os.path.join(DOSSIER_DONNEES, "brouillons_candidature.md")
+    os.makedirs(DOSSIER_DONNEES, exist_ok=True)
+    with open(chemin, "w", encoding="utf-8") as f:
+        f.write("\n".join(sections))
+    return chemin
+
+
+# ---------------------------------------------------------------------------
 # EMAIL RÉCAPITULATIF
 # ---------------------------------------------------------------------------
 
-def envoyer_email(nouveaux, chemin_dashboard):
+def envoyer_email(nouveaux, chemin_dashboard, chemin_brouillons=None):
     if not (EMAIL_UTILISATEUR and EMAIL_MOT_DE_PASSE and EMAIL_DESTINATAIRE):
         print("[Email] Configuration incomplète (variables VEILLE_EMAIL_*), envoi ignoré.")
         return
@@ -595,12 +723,25 @@ def envoyer_email(nouveaux, chemin_dashboard):
     for item in nouveaux:
         corps += f"- {item['titre']} ({item['source']})\n  {item['lien']}\n\n"
     corps += f"\nTableau de bord complet : {chemin_dashboard}\n"
+    if chemin_brouillons:
+        corps += (
+            "\nDes brouillons de lettre de motivation + checklist sont joints "
+            "à cet email pour les appels les plus pertinents. Ce sont des "
+            "PREMIERS JETS générés par IA : à relire et personnaliser avant "
+            "tout envoi — ne jamais les soumettre tels quels.\n"
+        )
 
     message = MIMEMultipart()
     message["From"] = EMAIL_UTILISATEUR
     message["To"] = EMAIL_DESTINATAIRE
     message["Subject"] = f"Veille appels à projets — {len(nouveaux)} nouveauté(s)"
     message.attach(MIMEText(corps, "plain", "utf-8"))
+
+    if chemin_brouillons and os.path.exists(chemin_brouillons):
+        with open(chemin_brouillons, "rb") as f:
+            piece_jointe = MIMEApplication(f.read(), Name="brouillons_candidature.md")
+        piece_jointe["Content-Disposition"] = 'attachment; filename="brouillons_candidature.md"'
+        message.attach(piece_jointe)
 
     try:
         with smtplib.SMTP(EMAIL_HOTE, EMAIL_PORT) as serveur:
@@ -679,8 +820,12 @@ def main():
     chemin = generer_dashboard(actifs)
     print(f"Tableau de bord généré : {chemin}")
 
+    chemin_brouillons = generer_dossier_brouillons(nouveaux)
+    if chemin_brouillons:
+        print(f"Brouillons de candidature générés : {chemin_brouillons}")
+
     deployer_netlify()
-    envoyer_email(nouveaux, chemin)
+    envoyer_email(nouveaux, chemin, chemin_brouillons)
 
 
 if __name__ == "__main__":
