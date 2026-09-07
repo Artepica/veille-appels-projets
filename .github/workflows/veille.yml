@@ -27,7 +27,6 @@ jobs:
       - name: Lancer la veille (collecte + dashboard + publication Netlify + email)
         env:
           VEILLE_AT_TOKEN: ${{ secrets.VEILLE_AT_TOKEN }}
-          VEILLE_CARENEWS_PAGES: ${{ vars.VEILLE_CARENEWS_PAGES }}
           VEILLE_NETLIFY_TOKEN: ${{ secrets.VEILLE_NETLIFY_TOKEN }}
           VEILLE_NETLIFY_SITE_ID: ${{ secrets.VEILLE_NETLIFY_SITE_ID }}
           VEILLE_EMAIL_HOTE: ${{ secrets.VEILLE_EMAIL_HOTE }}
