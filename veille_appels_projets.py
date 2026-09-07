@@ -564,7 +564,7 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
         f.write(html)
 
     # Copie identique dans le dossier "site" (celui publié sur Netlify)
-   os.makedirs(DOSSIER_SITE, exist_ok=True)
+    os.makedirs(DOSSIER_SITE, exist_ok=True)
     with open(FICHIER_SITE_INDEX, "w", encoding="utf-8") as f:
         f.write(html)
 
