@@ -1,0 +1,46 @@
+name: Veille des appels à projets
+
+on:
+  schedule:
+    # Tous les lundis à 7h00 UTC (8h/9h heure de Paris selon la saison)
+    - cron: "0 7 * * 1"
+  workflow_dispatch: {}   # bouton "Run workflow" -> déclenchement manuel depuis n'importe quel navigateur
+
+permissions:
+  contents: write   # nécessaire pour que le job puisse sauvegarder l'historique (data/historique.json)
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Lancer la veille (collecte + dashboard + publication Netlify + email)
+        env:
+          VEILLE_AT_TOKEN: ${{ secrets.VEILLE_AT_TOKEN }}
+          VEILLE_CARENEWS_PAGES: ${{ vars.VEILLE_CARENEWS_PAGES }}
+          VEILLE_NETLIFY_TOKEN: ${{ secrets.VEILLE_NETLIFY_TOKEN }}
+          VEILLE_NETLIFY_SITE_ID: ${{ secrets.VEILLE_NETLIFY_SITE_ID }}
+          VEILLE_EMAIL_HOTE: ${{ secrets.VEILLE_EMAIL_HOTE }}
+          VEILLE_EMAIL_PORT: ${{ secrets.VEILLE_EMAIL_PORT }}
+          VEILLE_EMAIL_USER: ${{ secrets.VEILLE_EMAIL_USER }}
+          VEILLE_EMAIL_PASSWORD: ${{ secrets.VEILLE_EMAIL_PASSWORD }}
+          VEILLE_EMAIL_TO: ${{ secrets.VEILLE_EMAIL_TO }}
+        run: python veille_appels_projets.py
+
+      - name: Sauvegarder l'historique dans le dépôt (pour la prochaine exécution)
+        run: |
+          git config user.name "Veille Art'Epica (bot)"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/historique.json
+          git diff --staged --quiet || git commit -m "Mise à jour automatique de la veille"
+          git push
