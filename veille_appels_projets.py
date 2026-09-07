@@ -564,9 +564,16 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
         f.write(html)
 
     # Copie identique dans le dossier "site" (celui publié sur Netlify)
-    os.makedirs(DOSSIER_SITE, exist_ok=True)
+   os.makedirs(DOSSIER_SITE, exist_ok=True)
     with open(FICHIER_SITE_INDEX, "w", encoding="utf-8") as f:
         f.write(html)
+
+    # Netlify a un bug connu : un zip de déploiement contenant UN SEUL
+    # fichier est parfois mal traité et servi en texte brut au lieu de
+    # HTML (voir forum Netlify). On ajoute donc systématiquement un
+    # second petit fichier, inoffensif, pour éviter ce cas de figure.
+    with open(os.path.join(DOSSIER_SITE, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write("User-agent: *\nAllow: /\n")
 
     return chemin_sortie
 
