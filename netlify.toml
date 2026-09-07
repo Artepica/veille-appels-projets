@@ -1,0 +1,5 @@
+[build]
+  publish = "site"
+
+# Pas de commande de build : le dossier "site/index.html" est déjà généré
+# par veille_appels_projets.py avant chaque publication.
