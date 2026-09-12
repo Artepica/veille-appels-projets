@@ -325,6 +325,60 @@ def collecter_recherche_web():
 
 
 # ---------------------------------------------------------------------------
+# DÉTECTION GÉNÉRIQUE DE LA DATE D'ÉCHÉANCE (toutes sources)
+# ---------------------------------------------------------------------------
+
+MOIS_FR = {
+    "janvier": 1, "février": 2, "fevrier": 2, "mars": 3, "avril": 4,
+    "mai": 5, "juin": 6, "juillet": 7, "août": 8, "aout": 8,
+    "septembre": 9, "octobre": 10, "novembre": 11, "décembre": 12, "decembre": 12,
+}
+
+# Mots-clés qui précèdent généralement une date limite dans un texte français
+_MOTIF_INTRO = r"(?:clôture|clôtur\w*|date limite|limite de candidature|avant le|jusqu'au|jusqu'\u2019au|deadline)"
+
+RE_DATE_NUMERIQUE = re.compile(
+    _MOTIF_INTRO + r"[^\d]{0,15}(\d{1,2})[./](\d{1,2})[./](\d{4})", re.IGNORECASE
+)
+RE_DATE_LITTERALE = re.compile(
+    _MOTIF_INTRO + r"[^\d]{0,15}(\d{1,2})(?:er)?\s+("
+    + "|".join(MOIS_FR.keys()) + r")\s+(\d{4})", re.IGNORECASE
+)
+
+
+def extraire_date_echeance(texte):
+    """
+    Cherche une date limite/de clôture dans un texte libre (titre + résumé),
+    en reconnaissant les formats numériques (12/09/2026, 12.09.2026) et en
+    toutes lettres (12 septembre 2026), précédés d'un mot-clé usuel
+    ("clôture", "avant le", "jusqu'au", "date limite"...).
+    Retourne un datetime.date, ou None si rien de fiable n'est trouvé.
+    """
+    if not texte:
+        return None
+
+    m = RE_DATE_NUMERIQUE.search(texte)
+    if m:
+        jour, mois, annee = m.groups()
+        try:
+            return datetime.date(int(annee), int(mois), int(jour))
+        except ValueError:
+            pass
+
+    m = RE_DATE_LITTERALE.search(texte)
+    if m:
+        jour, nom_mois, annee = m.groups()
+        mois = MOIS_FR.get(nom_mois.lower())
+        if mois:
+            try:
+                return datetime.date(int(annee), mois, int(jour))
+            except ValueError:
+                pass
+
+    return None
+
+
+# ---------------------------------------------------------------------------
 # FILTRAGE / SCORE DE PERTINENCE
 # ---------------------------------------------------------------------------
 
@@ -359,15 +413,35 @@ SEUIL_PAR_DEFAUT = 1
 def filtrer_et_scorer(items):
     vus = set()
     retenus = []
+    aujourdhui = datetime.date.today()
+
     for item in items:
         lien = item.get("lien", "").split("?")[0].rstrip("/")
         if not lien or lien in vus:
             continue
         vus.add(lien)
+
+        # Pour les sources qui n'extraient pas déjà une vraie date de
+        # clôture (Carenews le fait spécifiquement), on tente une
+        # détection générique dans le titre + résumé.
+        if not item.get("date_cloture"):
+            date_detectee = extraire_date_echeance(f"{item['titre']} {item.get('resume', '')}")
+            if date_detectee:
+                item["date_cloture"] = date_detectee.isoformat()
+
+        # Appel déjà clôturé, quelle que soit la source : on l'écarte.
+        if item.get("date_cloture"):
+            try:
+                if datetime.date.fromisoformat(item["date_cloture"]) < aujourdhui:
+                    continue
+            except ValueError:
+                pass
+
         item["score"] = score_pertinence(item)
         seuil = SEUILS_PAR_SOURCE.get(item.get("source"), SEUIL_PAR_DEFAUT)
         if item["score"] >= seuil:
             retenus.append(item)
+
     retenus.sort(key=lambda x: x["score"], reverse=True)
     return retenus
 
