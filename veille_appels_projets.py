@@ -940,6 +940,98 @@ def generer_dossier_brouillons(nouveaux):
 # EMAIL RÉCAPITULATIF
 # ---------------------------------------------------------------------------
 
+def obtenir_url_site_netlify():
+    """Récupère l'URL publique du site (ex. https://artepica.netlify.app)."""
+    if not (NETLIFY_TOKEN and NETLIFY_SITE_ID):
+        return None
+    try:
+        reponse = requests.get(
+            f"https://api.netlify.com/api/v1/sites/{NETLIFY_SITE_ID}",
+            headers={"Authorization": f"Bearer {NETLIFY_TOKEN}"},
+            timeout=15,
+        )
+        reponse.raise_for_status()
+        donnees = reponse.json()
+        return donnees.get("ssl_url") or donnees.get("url")
+    except requests.RequestException:
+        return None
+
+
+def generer_carte_email_html(item):
+    """
+    Carte HTML pour un appel à projets, avec des styles en ligne (les
+    clients email, notamment Gmail, ignorent souvent les balises <style>
+    externes ou les classes CSS). Reprend la palette du dashboard.
+    """
+    titre = item["titre"].replace("<", "&lt;")
+    resume = (item.get("resume") or "").replace("<", "&lt;")
+    financeur = (item.get("financeur") or "").replace("<", "&lt;")
+    source = item.get("source", "")
+    lien = item.get("lien", "#")
+    date_cloture = item.get("date_cloture", "")
+    if date_cloture:
+        meta = "échéance : " + datetime.date.fromisoformat(date_cloture).strftime("%d/%m/%Y")
+    else:
+        meta = "nouveau cette semaine"
+
+    ligne_financeur = (
+        f'<p style="margin:0 0 6px;font-family:-apple-system,\'Segoe UI\',sans-serif;'
+        f'font-size:13px;color:#556B4F;font-weight:600;">{financeur}</p>'
+        if financeur else ""
+    )
+
+    return f"""
+    <tr><td style="padding:18px 0;border-bottom:1px solid #DAD4C4;">
+      <table role="presentation" width="100%"><tr>
+        <td style="font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;color:#A87B4B;">{source}</td>
+        <td align="right" style="font-family:-apple-system,'Segoe UI',sans-serif;font-size:12px;color:#A87B4B;">{meta}</td>
+      </tr></table>
+      <p style="margin:6px 0 6px;font-family:Georgia,serif;font-size:17px;">
+        <a href="{lien}" style="color:#23261F;text-decoration:none;border-bottom:1px solid #556B4F;">{titre}</a>
+      </p>
+      {ligne_financeur}
+      <p style="margin:0;font-family:-apple-system,'Segoe UI',sans-serif;font-size:14px;color:#4a4d42;">{resume}</p>
+    </td></tr>"""
+
+
+def generer_email_html(nouveaux, url_site, chemin_brouillons):
+    date_generation = datetime.date.today().strftime("%d/%m/%Y")
+    cartes = "".join(generer_carte_email_html(item) for item in nouveaux)
+
+    lien_dashboard = url_site or "(configurez VEILLE_NETLIFY_SITE_ID pour un lien direct)"
+    bloc_brouillons = ""
+    if chemin_brouillons:
+        bloc_brouillons = """
+        <tr><td style="padding:16px 0 0;font-family:-apple-system,'Segoe UI',sans-serif;
+                        font-size:13px;color:#A82A2A;">
+          ⚠️ Des brouillons de lettre de motivation + checklist sont joints à cet email
+          pour les appels les plus pertinents. Ce sont des PREMIERS JETS générés par IA :
+          à relire et personnaliser avant tout envoi — ne jamais les soumettre tels quels.
+        </td></tr>"""
+
+    return f"""<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"></head>
+<body style="margin:0;background:#F6F4EE;">
+<table role="presentation" width="100%"><tr><td align="center">
+<table role="presentation" width="600" style="max-width:600px;background:#F6F4EE;">
+  <tr><td style="padding:32px 20px 16px;border-bottom:1px solid #DAD4C4;">
+    <p style="margin:0 0 4px;font-family:-apple-system,'Segoe UI',sans-serif;font-size:13px;color:#556B4F;">Art'Epica · Veille</p>
+    <h1 style="margin:0;font-family:Georgia,serif;font-size:24px;color:#23261F;">Nouveaux appels à projets</h1>
+    <p style="margin:8px 0 0;font-family:-apple-system,'Segoe UI',sans-serif;font-size:14px;color:#55584f;">
+      {len(nouveaux)} nouveauté(s) détectée(s) le {date_generation}.
+    </p>
+  </td></tr>
+  {cartes}
+  {bloc_brouillons}
+  <tr><td style="padding:24px 0 40px;font-family:-apple-system,'Segoe UI',sans-serif;font-size:13px;color:#8a8d80;">
+    Voir le tableau de bord complet : <a href="{lien_dashboard}" style="color:#556B4F;">{lien_dashboard}</a>
+  </td></tr>
+</table>
+</td></tr></table>
+</body></html>"""
+
+
 def envoyer_email(nouveaux, chemin_dashboard, chemin_brouillons=None):
     if not (EMAIL_UTILISATEUR and EMAIL_MOT_DE_PASSE and EMAIL_DESTINATAIRE):
         print("[Email] Configuration incomplète (variables VEILLE_EMAIL_*), envoi ignoré.")
@@ -949,23 +1041,30 @@ def envoyer_email(nouveaux, chemin_dashboard, chemin_brouillons=None):
         print("[Email] Aucun nouvel appel à projets, pas d'email envoyé.")
         return
 
-    corps = "Nouveaux appels à projets détectés :\n\n"
+    url_site = obtenir_url_site_netlify() or chemin_dashboard
+
+    # Texte brut (repli pour les messageries qui n'affichent pas le HTML)
+    corps_texte = "Nouveaux appels à projets détectés :\n\n"
     for item in nouveaux:
-        corps += f"- {item['titre']} ({item['source']})\n  {item['lien']}\n\n"
-    corps += f"\nTableau de bord complet : {chemin_dashboard}\n"
+        corps_texte += f"- {item['titre']} ({item['source']})\n  {item['lien']}\n\n"
+    corps_texte += f"\nTableau de bord complet : {url_site}\n"
     if chemin_brouillons:
-        corps += (
+        corps_texte += (
             "\nDes brouillons de lettre de motivation + checklist sont joints "
             "à cet email pour les appels les plus pertinents. Ce sont des "
             "PREMIERS JETS générés par IA : à relire et personnaliser avant "
             "tout envoi — ne jamais les soumettre tels quels.\n"
         )
 
-    message = MIMEMultipart()
+    message = MIMEMultipart("mixed")
     message["From"] = EMAIL_UTILISATEUR
     message["To"] = EMAIL_DESTINATAIRE
     message["Subject"] = f"Veille appels à projets — {len(nouveaux)} nouveauté(s)"
-    message.attach(MIMEText(corps, "plain", "utf-8"))
+
+    alternative = MIMEMultipart("alternative")
+    alternative.attach(MIMEText(corps_texte, "plain", "utf-8"))
+    alternative.attach(MIMEText(generer_email_html(nouveaux, url_site, chemin_brouillons), "html", "utf-8"))
+    message.attach(alternative)
 
     if chemin_brouillons and os.path.exists(chemin_brouillons):
         with open(chemin_brouillons, "rb") as f:
