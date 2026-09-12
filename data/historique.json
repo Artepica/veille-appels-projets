@@ -167,14 +167,6 @@
     "score": 4,
     "premiere_detection": "2026-09-07"
   },
-  "b4112c5d75d7718cd4af9c31931bd7e3296db906d732f046e5e014c2b1020c82": {
-    "titre": "Appel à projets - Conseil Supérieur de l'Education aux médias",
-    "lien": "https://www.culture.be/en/vous-cherchez/appels-a-projetcandidature/detail/?tx_ttnews%5Btt_news%5D=11396&cHash=25b93b0b78490e886f2ba001ee18ed8f",
-    "resume": "Cetappelviseàsoutenir le développement de l'éducationauxmédiasauprès de publics et de secteurs sociaux, culturels et éducatifs spécifiques hors contexte scolaire. Les candidatures sont ouvertes jusqu'au 4 juillet 2025. Vous faites partie du secteur de l'éducation permanente, de la jeunesse, des centres culturels ou d'autres secteurs associatifs et vous avez envie de ...",
-    "source": "Recherche web (fondation appel à projets éducation aux médias)",
-    "score": 4,
-    "premiere_detection": "2026-09-07"
-  },
   "cd02c9fda7553544ecbe82973ba4d9b0a428c5db57942bac0096b8b5ef4a0774": {
     "titre": "Education aux médias et à l'information (EMI) / Résidences de ...",
     "lien": "https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/appels-a-projets-candidatures/education-aux-medias-et-a-l-information-emi-residences-de-journalistes",
@@ -409,7 +401,8 @@
     "resume": "📣 L'appelàprojets2027 de Capsule d'Art est ouvert ! Vous portez unprojetd'art-thérapieou demédiationartistiqueàvisée thérapeutique en faveur de personnes en situation de vulnérabilité ? Les candidatures pour les actions soutenuesàpartir de janvier 2027 sont ouvertes jusqu'au 30 septembre 2026. Pour ce nouvelappelàprojets, Capsule d'Art soutiendra des actions ...",
     "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
     "score": 3,
-    "premiere_detection": "2026-09-07"
+    "premiere_detection": "2026-09-07",
+    "date_cloture": "2026-09-30"
   },
   "4d18ebaf57c3dc883d31a6a9415e3d44388a75122752801204fbc3d8b60c2298": {
     "titre": "Accueil - Capsule D'Art",
@@ -1027,7 +1020,7 @@
     "lien": "https://dane.ins.ac-guyane.fr/appel-a-projets-ecoles-numeriques.html",
     "resume": "Dans le cadre de la politique de développement dunumériquepour l'éducation du ministère de l'Éducation nationale la DANE accompagne les écoles primaires de l'académie pour les aideràrépondreàl'appelàprojets\"EcolesNumériquesInnovantes etruralité\" (ENIR).",
     "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
-    "score": 3,
+    "score": 4,
     "premiere_detection": "2026-09-07"
   },
   "f4c86cb4d0f82a72878bce90d73b52e84d20049e1bae558b855798f04afdfcec": {
@@ -1060,21 +1053,14 @@
     "resume": "Concours Photo Nationaux Envoyer un Concours Étiquette :Appelàcandidatures Exposition photographique en plein air Perros-Guirec au 30 septembre 2026 Publié le 4 septembre 202627 août 2026par calendrierduconcoursphoto Date limite: 30 septembre 2026. Dans le cadre de sa politique culturelle et de valorisation de l'espace public, la Ville",
     "source": "Recherche web (appel à projets photographie jeunes)",
     "score": 4,
-    "premiere_detection": "2026-09-07"
+    "premiere_detection": "2026-09-07",
+    "date_cloture": "2026-09-30"
   },
   "c6b9b717dfb09fb607ff9234c026d3e33604366faad182e0347b604c596617da": {
     "titre": "Le Crédit Agricole des Savoie lance la phase de vote de son appel à ...",
     "lien": "https://www.ici.fr/auvergne-rhone-alpes/savoie-73/le-credit-agricole-des-savoie-lance-son-appel-a-projets-2026-pour-soutenir-les-jeunes-dans-le-monde-professionnel-4853228",
     "resume": "LeCréditAgricoledes Savoie poursuit sonappelàprojets\" Agir pour l'avenir des Savoie\" sur le thème de l'insertion des jeunes dans le monde du travail. Du 22 juin au 5 juillet, votez pour votreprojet\"coup de coeur\" !",
     "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
-    "score": 2,
-    "premiere_detection": "2026-09-07"
-  },
-  "9a2eca337559d4e8f34f00d06f61fb0faaeac5b16bb2a6668197a695ebd79eb9": {
-    "titre": "\"Porteurs de liens\" : lutte contre l'isolement social des seniors ...",
-    "lien": "https://rrapps-bfc.org/porteurs-de-liens-lutte-contre-lisolement-social-des-seniors-appel-projet",
-    "resume": "Date limite : 31.10.2025 \"Porteursdeliens\" : lutte contre l'isolementsocialdesseniors.AppelàprojetThématique (s) : Thématique Personnes âgées Santé mentale Territoire (s) : Territoire Côte-d'Or Doubs Jura Nièvre...",
-    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
     "score": 2,
     "premiere_detection": "2026-09-07"
   },
@@ -1123,14 +1109,6 @@
     "lien": "https://fondation.ca-centrest.fr/votre-projet/",
     "resume": "Il représente une initiative dans la durée, qui pérennise activité, emplois, gains sociaux, accèsàla culture, etc. Cela exclut lesprojetsàcaractère ponctuel (manifestation, événement, festival, colloque…). La fondation n'intervient que pour desprojetssitués sur le territoire duCréditAgricoleCentre-est",
     "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
-    "score": 2,
-    "premiere_detection": "2026-09-07"
-  },
-  "fd559bb9e9996ed8a363394a187e64bc0ba66546ab252cd2498b3410584583e6": {
-    "titre": "Appel à projets en éducation aux médias - WBE",
-    "lien": "https://www.wbe.be/idees-de-projets/details-idees-projets/news/appel-a-projets-en-education-aux-medias/",
-    "resume": "Vous enseignez dans l'enseignement fondamental ou secondaire ? Lancez-vous dans unprojetd'éducationauxmédiasavec vos élèves et obtenez un subside pour le réaliser ! Envoyez votre candidature jusqu'au 16 mai 2025.",
-    "source": "Recherche web (fondation appel à projets éducation aux médias)",
     "score": 2,
     "premiere_detection": "2026-09-07"
   },
@@ -1318,6 +1296,118 @@
     "lien": "https://www.cnsa.fr/appels-projets",
     "resume": "Cetappelàmanifestation d'intérêt (AMI) viseàconstituer et formerdeséquipesdeprofessionnels au déploiement d'un programmedeprévention multidimensionnel axé sur portant sur la santé cognitive et leliensocial, destiné aux personnes âgéesde60 ans et plus vivantàdomicile.",
     "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "73cebc99d50018a979c228766807d0c4bd01fff9b9f17411eb04445c938a9e00": {
+    "titre": "Appel à projets pour la labellisation « Bicentenaire de la Photographie ...",
+    "lien": "https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/appels-a-projets-candidatures/appel-a-projets-pour-la-labellisation-bicentenaire-de-la-photographie",
+    "resume": "Cetappelàprojetsviseàvaloriser tous les moyens et supports de diffusion, d'étude et de créationàtravers la labellisation deprojetsvariés. Cesprojetspeuvent être des créations originales ou des dispositifs et actions pouvant être reconduits et mis en avant pendant le Bicentenaire : expositions, virtuelles, in situ ; résidences, commandes artistiques, soutenant la ...",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 6,
+    "premiere_detection": "2026-09-12"
+  },
+  "8865ef0eab0e82fe8e607655bc323163c6a0a6b34db450be5d6072d385e36d13": {
+    "titre": "32 lauréats bénéficieront de l'appel à projets « Jeunesse outre-mer »",
+    "lien": "https://www.karibinfo.com/news/32-laureats-beneficieront-de-lappel-a-projets-jeunesse-outre-mer/",
+    "resume": "Lancé le 17 mars 2022 par le ministère desoutre-mer, l'appelàprojets«JeunesseOutre-mer» a désigné ses lauréats.Àtravers cetappelàprojets, l'engagement du ministère desOutre-meren faveur de lajeunesses'articule autour de trois axes :- Le premier, ciblé sur l'accompagnement des jeunes au sein des territoires ultramarins afin […]",
+    "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "9a55e4c1e09a8eddc67710d14dc4493cb293983fa196a2e41025c3e744ab7dba": {
+    "titre": "Appel à candidatures - Art x Terra",
+    "lien": "https://artxterra.com/appel-a-candidatures/",
+    "resume": "Chaque mois, nous sélectionnons pour vous les meilleures opportunités artistiques etappelsde candidaturesàne pas manquer.Àdécouvrir sans modération !",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "d375ed84a97496417d6c7ffd039dc922059643249be6faef469785127f33b0e3": {
+    "titre": "La Fondation Crédit Agricole Solidarité et Développement",
+    "lien": "https://www.fondation-ca-solidaritedeveloppement.org/",
+    "resume": "La FondationCréditAgricoleSolidarité et Développement (CASD), reconnue d'utilité publique, agit en faveur de l'autonomie socio-économique des personnes en accompagnant des organismes d'intérêt général partout en France.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "94bbac9fca35d7c78e9aff6e5e5d67b5a755f400db772e7267e52ffa98281484": {
+    "titre": "Appel à propositions - Projets transfrontaliers d'éducation aux médias",
+    "lien": "https://digital-strategy.ec.europa.eu/fr/node/13090/printable/pdf",
+    "resume": "Appelàpropositions -Projetstransfrontaliers d'éducationauxmédiasDans un paysage médiatique numérique en rapide évolution, la Commission continue d'investir dans des solutions innovantes visantàrenforcer les compétences de tous les citoyens européens en matière d'éducationauxmédias,àsoutenir une coopération transfrontière efficace etàlimiter les effets ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "bc0a2ab7208391bf933cc2b04634ed4ffb761aad13837d2b5996d32adf0b378b": {
+    "titre": "Soutenir l'éducation aux médias dans le secteur jeunesse",
+    "lien": "https://evrasjeunesse.cfwb.be/subventions/appels-a-projets/education-aux-medias/",
+    "resume": "L'appelàprojetéducationauxmédiass'adresseauxorganisations de jeunesse,auxcentres de jeunes,auxgroupes locaux des mouvements de jeunesse etauxgroupes locaux des mouvements thématiques.",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "9c00cfe65ee8ba27f4b555e31017cf84d163c2ebb141eb163406b4fd56277d14": {
+    "titre": "Appels à candidature - ADAGP",
+    "lien": "https://www.adagp.fr/fr/soutien-la-creation-artistique/agenda/appels-candidature",
+    "resume": "Retrouvez ici les différentsappelsàcandidature en cours. Ces aides directes permettent aux artistes de poursuivre leurs créations et de valoriser leur travail.",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "2a2b612e4ace00717a5de8949d90143894bc29d43c4621fc1b919fb6fffacb9d": {
+    "titre": "PDFAppel à projets scolaires d'éducation aux médias 2025-2026 Thématique",
+    "lien": "https://www.csem.be/sites/default/files/2025-03/Appel%20%C3%A0%20projets%20scolaires%202025-2026_0.pdf",
+    "resume": "Appelàprojetsscolaires d'éducationauxmédias2025-2026 Thématique PARLONSMÉDIAS! Chaque enseignant a très certainement déjà questionné/ voulu questionner ses élèves sur leurs usages médiatiques. Que font-ils en ligne ? A quoi jouent-ils ? Comment s'informent-ils ? Comment perçoivent-ils l'évolution technologique des ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "88a37c070b393831d0082437afeb8e9decfa0da940d680ac1bbe2fc3d7eb2bb4": {
+    "titre": "Appels à projets artistes - Prix, résidences et candidatures - Vagabond ...",
+    "lien": "https://vagabondart.club/appels-a-projets/",
+    "resume": "Découvrez une sélection d'appelsàprojets, prix, résidences et opportunités destinés aux artistes contemporains. Cette page rassemble desappelsàcandidatures en cours, en France etàl'international, avec une attention particulière portéeàla jeune création et aux pratiques émergentes.",
+    "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "838aa9ffd7e3db309bc3b503d22dad61e153e1c889b01afb6f5ca2a18b5ecb9c": {
+    "titre": "Appels - devenir•art",
+    "lien": "https://devenir.art/appels/",
+    "resume": "Cetappelàcandidatures propose aux artistes, duo d'artistes ou collectifs de répondre en émettant leur souhait de participer. L'artiste répond en démontrant la cohérence de sa proposition avec son travailartistiqueàtravers un book, une courte note d'intention, et une esquisse deprojet.",
+    "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "d6091ca3022142e42189bfe17b4e91bac6fe2ed19aba116006d71ff245d4f39f": {
+    "titre": "Projet participatif - Renforcer le lien social des personnes en ...",
+    "lien": "https://participer.apf-francehandicap.org/project/projet-association-pouvoir-dagir-pouvoir-choisir/collect/le-projet-associatif-en-actions/proposals/renforcer-le-lien-social-des-personnes-en-situation-de-handicap",
+    "resume": "Ungroupedeparoleest généralement considéré comme un « regroupementdepersonnes, toutes concernées par au moins une préoccupation commune,àun moment donnédeleur vie » (Raybaud, 2017). Les objectifs peuvent être multiples : développer une dynamique et une solidarité/un partage (Raybaud, 2017), créer une enveloppe psychique solide permettantdecontenir les émotions et la ...",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "2dba7bc01e4ca7eb7ec315997c2850058d449e4cfc70a5400a6a3a060bdd34cb": {
+    "titre": "Appels à projets Jeunes - Fimeco Walter France",
+    "lien": "https://www.fimeco-walter-allinial.com/aap-filiere/jeunes/",
+    "resume": "Appelsàprojets,appelsàmanifestations d'intérêt, aides et subventions d'entreprises pour les jeunes entrepreneurs en France",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "c21a7af6a9e358ee49e529fa9fe07223a36f0da984ad5232b9d65914909b4a93": {
+    "titre": "Appel à projets : Cinquième édition de l'Appel à Projets autour de l ...",
+    "lien": "https://www.cressoccitanie.org/Appel-a-projets-Cinquieme-edition-de-l-Appel-a-Projets-utour-de-l",
+    "resume": "Du 1er juillet au 24 octobre 2025, leCréditAgricoledu Languedoc lance la cinquième édition de sonAppelàprojets, autour de l'accompagnement des transitions, environnementales,agricoleset agro-alimentaires, sur son territoire. 🙋 Pour qui ?",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "d1a1cec9772e6edc56fabcd1ad4207ff56c9ee4a365250755376da25bc60a51a": {
+    "titre": "Education aux médias : le fonds Values lance son premier appel à projets",
+    "lien": "https://africaintimes.com/2026/04/education-aux-medias-le-fonds-values-lance-son-premier-appel-a-projets/",
+    "resume": "Values.mediainaugure son fonds de dotation avec un premierappelàprojetsdestinéauxassociations engagées pour l'éducationauxmédiaset la défense des valeurs démocratiques. Créé pour soutenir des initiatives d'intérêt général, ce fonds viseàfinancer et accompagner desprojetsportés par des structuresàbut non lucratif, avec un focus sur le pluralisme de l ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
     "score": 1,
     "premiere_detection": "2026-09-12"
   }
