@@ -376,7 +376,7 @@
     "lien": "https://www.appelaprojets.org/appelprojet/display/3723",
     "resume": "Depuis 2016, la FondationCréditAgricoleSolidarité et Développementpropose unappelàprojetspour soutenir des initiatives favorisant l'accèsàla santé. Cette année, la Fondation s'attacheàsoutenir desprojetsen faveur dela santé des bénéficiaires de l'Aide Socialeàl'Enfance.",
     "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
-    "score": 3,
+    "score": 4,
     "premiere_detection": "2026-09-07"
   },
   "e383c492a43a98c047ea0813679057b99de30c2618dc99ce3fd0ad00570e1775": {
@@ -490,17 +490,6 @@
     "financeur": "",
     "date_publication": "2026-08-28",
     "date_cloture": "2026-10-02",
-    "source": "Carenews",
-    "score": 2,
-    "premiere_detection": "2026-09-07"
-  },
-  "00d5c9d09cfd485e6bee5c72ad08fb0f00d361a3436383cb0d44ac8fc2e8c7f1": {
-    "titre": "La petite enfance (0-3 ans) et la parentalité, favorisant toutes les chances de bien grandir et de bien éduquer  -",
-    "lien": "https://www.carenews.com/appels-a-projet/la-petite-enfance-0-3-ans-et-la-parentalite-favorisant-toutes-les-chances-de-bien",
-    "resume": "La Fondation Blancheporte lance son nouvel appel à projets 2026, sur le territoire de la MEL (Métropole Européenne de Lille), ouvert aux structures associatives reconnues d’utilité publique ou issues de la loi de 1901, œuvrant pour :\r\n\r\n• la petite enfance (0-3 ans) et la parentalité, au sens large, ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-07-15",
-    "date_cloture": "2026-09-10",
     "source": "Carenews",
     "score": 2,
     "premiere_detection": "2026-09-07"
@@ -728,17 +717,6 @@
     "score": 1,
     "premiere_detection": "2026-09-07"
   },
-  "a756b7be9f63425e0f7ac9c6fa0193a99b70ffd2228cf5f1f14f560589bbe91d": {
-    "titre": "Lutte contre la précarité énergétique en région Occitanie / Pyrénées-Méditerranée  -  Énergie solidaire",
-    "lien": "https://www.carenews.com/energie-solidaire/appels-a-projet/lutte-contre-la-precarite-energetique-a-travers-des",
-    "resume": "Énergie Solidaire Occitanie lance son 4ᵉ Appel à Projets pour soutenir les associations engagées dans la lutte contre la précarité énergétique. Doté de 150 000 €, ce dispositif vise à financer des projets innovants accompagnant les ménages modestes dans leurs parcours de rénovation énergétique. ...\nPar\nÉnergie Solidaire",
-    "financeur": "Énergie Solidaire",
-    "date_publication": "2026-06-10",
-    "date_cloture": "2026-09-11",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-07"
-  },
   "5f167c00c6fb865a9865f0cae494732f8fc9748226094a58f299b7da26af194b": {
     "titre": "EplS Initiative - Entreprendre pour la solidarité  -",
     "lien": "https://www.carenews.com/appels-a-projet/epls-initiative-entreprendre-pour-la-solidarite",
@@ -811,7 +789,7 @@
     "lien": "https://www.bretagnetierslieux.bzh/les-appels-a-projets/",
     "resume": "Retrouvez ici les différentsappelsàprojetsdans le milieu destiers-lieux qui pourraient vous intéresser !",
     "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
-    "score": 1,
+    "score": 3,
     "premiere_detection": "2026-09-07"
   },
   "bf0ad06666e799bffca85c9a10cfa6bd6c8cae0c6a522c92fb0cec1e1d2d9167": {
@@ -1081,7 +1059,7 @@
     "lien": "https://calendrierduconcoursphoto.fr/tag/appel-a-candidatures/",
     "resume": "Concours Photo Nationaux Envoyer un Concours Étiquette :Appelàcandidatures Exposition photographique en plein air Perros-Guirec au 30 septembre 2026 Publié le 4 septembre 202627 août 2026par calendrierduconcoursphoto Date limite: 30 septembre 2026. Dans le cadre de sa politique culturelle et de valorisation de l'espace public, la Ville",
     "source": "Recherche web (appel à projets photographie jeunes)",
-    "score": 2,
+    "score": 4,
     "premiere_detection": "2026-09-07"
   },
   "c6b9b717dfb09fb607ff9234c026d3e33604366faad182e0347b604c596617da": {
@@ -1195,5 +1173,152 @@
     "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
     "score": 1,
     "premiere_detection": "2026-09-07"
+  },
+  "28808cfe96a0b345a50f810a972ac59bacede2395218b54ddf461d4a6ed3b315": {
+    "titre": "PDFAppel à projets Jeunesse 2024 - Caf.fr",
+    "lien": "https://www.caf.fr/sites/default/files/medias/078/documents/partenaires/Appel%20%C3%A0%20projet%20jeunesse/2024/VOLET%203%20Dossier%20de%20candidature%20AAP%20Jeunesse%202024.pdf",
+    "resume": "Volet 3 Soutien auxprojetsd'éducation aux médias et aunumérique,àdestination des jeunes La Branche Famille poursuit le déploiement du dispositif « Promeneurs du Net » (PdN), identifié comme un outil pertinent et innovant d'éducationàla citoyenneté et de prévention des risques (radicalisation, cyberviolence, harcèlement).",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 9,
+    "premiere_detection": "2026-09-12"
+  },
+  "4f20add272b8250175984b573c8e8fbb740a4bae87cb0301553a610e8df0e36f": {
+    "titre": "Appel à initiatives - Cultivons l'art en milieu rural | Cnap",
+    "lien": "https://www.cnap.fr/annonces/appel-initiatives-cultivons-lart-en-milieu-rural",
+    "resume": "Dans un contexte où le secteur artistique traverse de fortes tensions et où les moyens dédiésàla création dans les territoires ruraux sont fragiles, la Fondation de France Centre-Est renouvelle son engagement en lançant l'édition 2026 de sonappelàinitiatives : Cultivons l'art en milieurural: vers des permanences artistiques de territoires. Les initiatives doivent être ...",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 5,
+    "premiere_detection": "2026-09-12"
+  },
+  "4fca57b6fd6f8e1ede42eb22c28b4c8558335173dfa3412054a11cee4509d54f": {
+    "titre": "MSA - Grandir en milieu rural - MSA Portes de Bretagne",
+    "lien": "https://portesdebretagne.msa.fr/lfp/grandir-en-milieu-rural",
+    "resume": "Lesprojetset actions financés dans le cadre de Grandir en Milieu Rural sont destinés prioritairement aux jeunes de 0à25 ans et leurs familles. Sur quelles thématiques ? Lesprojetsdoivent s'inscrire dans les thématiques suivantes : petite enfance, parentalité, loisirs-vacances, mobilité etnumérique. Qui peut candidater ?",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "ec295b5b9323e1a36ea18b8ca5b50300a612b0f6260f5e1d87e1487d5103746e": {
+    "titre": "Project: Youth Grant for High Impact Social Innovation : promouvoir l ...",
+    "lien": "https://core.unesco.org/en/project/A210452111",
+    "resume": "Contexte et justification L'Afrique de l'Ouest dispose de l'une des populations les plus jeunes du monde. Dans plusieurs pays de la région, les jeunes représentent plus de 60 % de la population. Cette dynamique démographique constitueàla fois une opportunité majeure de développement et un défi important en matière d'emploi, d'inclusion sociale, de participation citoyenne et ...",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "d3d936b8658805160e79852036b2bcda4eff8fe73b0d78f841ac87f5d347e683": {
+    "titre": "Make.org Foundation • Programme de lutte contre le harcèlement scolaire",
+    "lien": "https://foundation.make.org/causes/programme-de-lutte-contre-le-harcelement-scolaire",
+    "resume": "En cohérence avec le programme gouvernemental pHARe, ces acteurs interviennent sur plusieurs volets de réponse :prévention, sensibilisation, détection, formation des professionnels de l'éducation, des parents et desjeunes, ligne téléphonique d'écoute, etc.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "85c455a1f429382a2e38c1ef382233651929b2e68e0554c5096b958400431a15": {
+    "titre": "APPEL A PROJET | « Mobiliser les liens de proximité en ruralité » 2026 ...",
+    "lien": "https://www.villes-et-territoires.fr/appels-a-projets/appel-a-projet-mobiliser-les-liens-de-proximite-en-ruralite-2026-fondation-de-france/",
+    "resume": "« Renforcer lesliensdeproximité en ruralité »,appelàprojetdela FondationdeFrance qui viseàsoutenirdesinitiatives permettantderecréer duliensocialdans les territoires ruraux fragilisés, en particulier auprèsdespersonnes isolées (personnes âgées, personnes en situationdehandicap, habitants éloignésdesservices oudela vie sociale). Lesprojetsattendus […]",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "629d6beb893f648eb4ded6901d2b46a4baf253e029cd2d5676611f94405005ad": {
+    "titre": "PDFAppel à projets 2025",
+    "lien": "https://www.carsat-nordest.fr/files/live/sites/carsat-nordest/files/documents/partenaires/etre-partenaire-AS/maintenir-le-lien-social/Maintenir-le-lien%20social-2025.pdf",
+    "resume": "Appelàprojets2025 Pour les actionsdemaintien duliensocialetdelutte contre l'isolement, l'inclusion numérique et l'aide aux aidants",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "f110bbe7f755f96bef61c6fa7cd4ac7f3b18f14ce068d9e6f254897bf7d17bdf": {
+    "titre": "PDFAPPEL A PROJETS JEUNESSE 2024-2027 - Caf.fr",
+    "lien": "https://www.caf.fr/sites/default/files/medias/131/Espace%20Partenaires/Appels%20%C3%A0%20projets/Cahier%20des%20charges-%20AAPJ%202024.pdf",
+    "resume": "La Caf 13 lance l'appelàprojets2024 dans la continuité des orientations nationales en matière dejeunesseavec pour ambition de contribuer au renforcement de l'égalité des chances etàla réduction des inégalités afin de donneràtous les jeunes les moyens d'être des citoyens engagés, insérés professionnellement et ...",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "455efb1b9914f8263545632e7494d5270a8cc9b1e06f6e12e4034555cd15bc64": {
+    "titre": "PDFCultivons l'art en milieu rural : vers des permanences artistiques de ...",
+    "lien": "https://www.fondationdefrance.org/images/pdf/2025_aap/aap-cultivons-l-art-en-milieu-rural-2025-vf.pdf",
+    "resume": "En 2025, la première édition de cetappelàinitiatives cible des initiatives situées en milieurural, exclusivement dans les départements de l'Isère, du Rhône, de la Loire et de la Côte d'Or.",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "f33a6d63ff616385165d72707bed9d91543171b965788f2e439ff42f9b2eeaae": {
+    "titre": "Cultivons l'art en milieu rural : vers des permanences artistiques de ...",
+    "lien": "https://musiquecontemporaine.org/aides-concours-appels/cultivons-lart-en-milieu-rural-vers-des-permanences-artistiques-de",
+    "resume": "Territoires concernés Cetappelàinitiatives cible des démarches localisées en milieurural, exclusivement dans les départements de la Loire, du Rhône, de la Haute-Savoie, de la Côte d'Or, et de la Saône-et-Loire.",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "2d3b567c5f583573ac0324de84cda2e3f47ade3da0bbf3342bcd6b296a0500af": {
+    "titre": "Appel à projets : Lien social et lutte contre l'isolement des seniors ...",
+    "lien": "https://www.clubster-nsl.com/appels-projets/appel-a-projets-lien-social-et-lutte-contre-lisolement-des-seniors/",
+    "resume": "L'appelàprojets«liensocialet lutte contre l'isolementdesretraités » a pour objectif le soutienàdesprojetsvisantàrepérer et accompagner les retraités isolés, prévenir l'isolementdesainés. Ainsi, lesprojetsdevront répondreàl'objectif…",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "e434183b3d9e941255a1f990de878ce4a97afb7a3a1ea774aa4b769dde539437": {
+    "titre": "Les lauréats de l'appel à projets « Jeunesse outre-mer »",
+    "lien": "https://www.megazap.fr/Les-laureats-de-l-appel-a-projets-Jeunesse-outre-mer_a9477.html",
+    "resume": "L'enveloppe dédiée s'élèveàun total de 500.000€, financée par le Ministère desoutre-mer. Le Ministre chargé desOutre-mer, se félicite du résultat de cetappelàprojets, qui permettra d'accompagner efficacement desprojetsprometteurs en faveur des jeunes ultramarins.",
+    "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "a7b1140b63cc9f1ce01dc40ceaf0e173d57b9820ff15867bf088f3369254ec60": {
+    "titre": "Appel à projets « Porteurs de liens » : lutte contre l'isolement social ...",
+    "lien": "https://partenaires.kalivi-bfc.fr/appel-a-projets-lutte-contre-lisolement-social-des-personnes-agees-par-kalivi",
+    "resume": "L'appelàprojets« Porteursdeliens», qui œuvreàsoutenirdesinitiatives pour le maintien duliensocialchez les seniors, est ouvert du 7 septembre au 30 octobre 2026. Découvrez les modalités et déposez votre candidature.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "e55f75a030f7ba8d177a4954eb87b3ff7d9b12d1af65b30d6b2d272ceefbcb8a": {
+    "titre": "Programme d'accompagnement Modes d'emploi  -",
+    "lien": "https://www.carenews.com/appels-a-projet/programme-d-accompagnement-modes-d-emploi",
+    "resume": "Le programme Modes d’emploi d’Antropia ESSEC vise à soutenir les dirigeants et les organisations qui œuvrent pour l’insertion et la formation professionnelle des publics les plus éloignés de l’emploi en France. Face à un marché de l’emploi mouvant, des subventions publiques en baisse et une ...\nPar",
+    "financeur": "",
+    "date_publication": "2026-09-07",
+    "date_cloture": "2026-10-01",
+    "source": "Carenews",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "3a1da5a212a0ccda75bb38e204fd12d76210cb41dd685dc6519788c1a072a383": {
+    "titre": "Appels à candidatures, galeries d&apos;art et expositions en cours | XHBT",
+    "lien": "https://www.xhbt.org/fr",
+    "resume": "XHBT® est un répertoire pensé pour les artistes :appelsàcandidatures, résidences, bourses et concours, aux côtés des galeries d'art contemporain et des calendriers d'expositions du monde entier. Les opportunités sont recensées chaque jouràpartir de sources publiques et classées par date limite de candidature.",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "122257e2bb3df1333722848dad79b8034308890507ff4272482dd0ce3812434e": {
+    "titre": "Lutter contre le harcèlement entre élèves | éduscol | Ministère de l ...",
+    "lien": "https://eduscol.education.gouv.fr/5028/lutter-contre-le-harcelement-entre-eleves",
+    "resume": "Leharcèlementest une violence qui peut avoir des conséquences graves et multiples sur les victimes. La lutte contre leharcèlementàl'École est une priorité du ministère chargé de l'éducation nationale, qui déploie un ensemble de mesures sur tout le territoire national afin de permettre aux élèves de suivre leur scolarité dans les meilleures conditions.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "c706329ba1347e4ee528085695ff8210e78a9b452125f409212a160b61165447": {
+    "titre": "Tiers-lieux | ANCT - Agence Nationale de la Cohésion des Territoires",
+    "lien": "https://anct.gouv.fr/programmes-dispositifs/tiers-lieux",
+    "resume": "Découvrez les programmes et dispositifs destiers-lieux pour dynamiser les territoires et favoriser l'innovation collaborative.",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "65f20fba914b1b80a5131855b1cae37a563ba27b06c136293dfa1101ead1bdbb": {
+    "titre": "Appels à projet | CNSA.fr",
+    "lien": "https://www.cnsa.fr/appels-projets",
+    "resume": "Cetappelàmanifestation d'intérêt (AMI) viseàconstituer et formerdeséquipesdeprofessionnels au déploiement d'un programmedeprévention multidimensionnel axé sur portant sur la santé cognitive et leliensocial, destiné aux personnes âgéesde60 ans et plus vivantàdomicile.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
   }
 }
