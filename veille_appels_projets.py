@@ -484,14 +484,24 @@ def mettre_a_jour_historique(items_retenus, historique):
 
     # Purge : priorité à la vraie date de clôture quand elle est connue
     # (ex. Carenews), sinon on retombe sur JOURS_RETENTION depuis la
-    # première détection.
+    # première détection. Pour les entrées déjà en historique (créées
+    # avant l'ajout de la détection générique de date, ou dont le texte
+    # ne matchait pas au départ), on retente l'extraction ici aussi.
     aujourdhui_date = datetime.date.today()
     limite_detection = aujourdhui_date - datetime.timedelta(days=JOURS_RETENTION)
     a_supprimer = []
     for cle, val in historique.items():
+        if not val.get("date_cloture"):
+            date_detectee = extraire_date_echeance(f"{val['titre']} {val.get('resume', '')}")
+            if date_detectee:
+                val["date_cloture"] = date_detectee.isoformat()
+
         date_cloture = val.get("date_cloture")
         if date_cloture:
-            expire = datetime.date.fromisoformat(date_cloture) < aujourdhui_date
+            try:
+                expire = datetime.date.fromisoformat(date_cloture) < aujourdhui_date
+            except ValueError:
+                expire = datetime.date.fromisoformat(val["premiere_detection"]) < limite_detection
         else:
             expire = datetime.date.fromisoformat(val["premiere_detection"]) < limite_detection
         if expire:
@@ -530,9 +540,12 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
 
         meta_droite = f"échéance : {date_cloture}" if date_cloture else f"détecté le {date_detection}"
         ligne_financeur = f'<p class="financeur">{financeur}</p>' if financeur else ""
+        statut = item.get("statut") or ""
+        classe_statut = f" statut-{statut}" if statut in ("traite", "archive") else ""
+        lien_js = lien.replace("'", "\\'")
 
         cartes_html += f"""
-        <article class="carte">
+        <article class="carte{classe_statut}" data-lien="{lien}">
           <div class="carte-entete">
             <span class="source">{source}</span>
             <span class="date">{meta_droite}</span>
@@ -540,6 +553,14 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
           <h2><a href="{lien}" target="_blank" rel="noopener">{titre}</a></h2>
           {ligne_financeur}
           <p class="resume">{resume}</p>
+          <div class="actions">
+            <button type="button" class="btn-statut{' actif' if statut == 'traite' else ''}"
+                    data-statut="traite"
+                    onclick="marquerStatut(this, '{lien_js}', 'traite')">✓ Traité</button>
+            <button type="button" class="btn-statut{' actif' if statut == 'archive' else ''}"
+                    data-statut="archive"
+                    onclick="marquerStatut(this, '{lien_js}', 'archive')">🗄 Archivé</button>
+          </div>
         </article>"""
 
     html = f"""<!DOCTYPE html>
@@ -631,6 +652,47 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
     color: #4a4d42;
     margin: 0;
   }}
+  .actions {{
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+  }}
+  .btn-statut {{
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.78rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--filet);
+    background: #fff;
+    color: var(--encre);
+    border-radius: 5px;
+    cursor: pointer;
+  }}
+  .btn-statut:hover {{
+    border-color: var(--sauge);
+  }}
+  .btn-statut.actif[data-statut="traite"] {{
+    background: var(--sauge);
+    border-color: var(--sauge);
+    color: #fff;
+  }}
+  .btn-statut.actif[data-statut="archive"] {{
+    background: #8a8d80;
+    border-color: #8a8d80;
+    color: #fff;
+  }}
+  .carte.statut-traite {{
+    background: #eef2ea;
+    margin: 0 -1rem;
+    padding: 1.4rem 1rem;
+    border-radius: 6px;
+  }}
+  .carte.statut-traite h2 a {{
+    text-decoration: line-through;
+    border-bottom-color: transparent;
+  }}
+  .carte.statut-archive {{
+    opacity: 0.55;
+  }}
   footer {{
     max-width: 760px;
     margin: 0 auto;
@@ -654,6 +716,65 @@ def generer_dashboard(items_actifs, chemin_sortie=FICHIER_DASHBOARD):
   Généré automatiquement à partir d'Aides-Territoires, Carenews et d'une recherche web élargie.
   Vérifiez toujours les dates et conditions directement auprès de l'organisme avant de candidater.
 </footer>
+
+<!-- Formulaire caché, détecté par Netlify au moment du déploiement :
+     nécessaire pour que Netlify Forms accepte les soumissions envoyées
+     en JavaScript par marquerStatut() ci-dessous. -->
+<form name="statut-appel" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="statut-appel" />
+  <input type="text" name="lien" />
+  <input type="text" name="statut" />
+  <input name="bot-field" />
+</form>
+
+<script>
+function encoderFormData(donnees) {{
+  return Object.keys(donnees)
+    .map(function(cle) {{ return encodeURIComponent(cle) + "=" + encodeURIComponent(donnees[cle]); }})
+    .join("&");
+}}
+
+function appliquerStatutVisuel(carte, statut) {{
+  carte.classList.remove("statut-traite", "statut-archive");
+  carte.querySelectorAll(".btn-statut").forEach(function(b) {{ b.classList.remove("actif"); }});
+  if (statut) {{
+    carte.classList.add("statut-" + statut);
+    var bouton = carte.querySelector('.btn-statut[data-statut="' + statut + '"]');
+    if (bouton) bouton.classList.add("actif");
+  }}
+}}
+
+function marquerStatut(bouton, lien, statutDemande) {{
+  var carte = bouton.closest(".carte");
+  var statut = bouton.classList.contains("actif") ? "" : statutDemande;
+
+  appliquerStatutVisuel(carte, statut);
+
+  // Visible tout de suite sur ce navigateur
+  try {{
+    var statuts = JSON.parse(localStorage.getItem("statutsAppels") || "{{}}");
+    statuts[lien] = statut;
+    localStorage.setItem("statutsAppels", JSON.stringify(statuts));
+  }} catch (e) {{}}
+
+  // Visible par toute l'équipe après la prochaine mise à jour hebdomadaire
+  fetch("/", {{
+    method: "POST",
+    headers: {{"Content-Type": "application/x-www-form-urlencoded"}},
+    body: encoderFormData({{"form-name": "statut-appel", lien: lien, statut: statut}})
+  }}).catch(function() {{}});
+}}
+
+(function appliquerStatutsLocaux() {{
+  try {{
+    var statuts = JSON.parse(localStorage.getItem("statutsAppels") || "{{}}");
+    document.querySelectorAll(".carte[data-lien]").forEach(function(carte) {{
+      var lien = carte.getAttribute("data-lien");
+      if (statuts[lien]) appliquerStatutVisuel(carte, statuts[lien]);
+    }});
+  }} catch (e) {{}}
+}})();
+</script>
 </body>
 </html>"""
 
@@ -869,6 +990,50 @@ def envoyer_email(nouveaux, chemin_dashboard, chemin_brouillons=None):
 # MISE EN LIGNE SUR NETLIFY (optionnel)
 # ---------------------------------------------------------------------------
 
+def recuperer_statuts_netlify():
+    """
+    Récupère les statuts "traité"/"archivé" que l'équipe a marqués en
+    cliquant sur les boutons du dashboard (soumis comme Netlify Forms —
+    voir le formulaire caché "statut-appel" dans generer_dashboard()).
+
+    Retourne un dict {lien: statut}, en ne gardant que la soumission la
+    plus récente pour chaque lien. Retourne {} si Netlify n'est pas
+    configuré, si "Form detection" n'est pas activé sur le site, ou en
+    cas d'erreur — cette fonctionnalité n'est jamais bloquante pour le
+    reste de la veille.
+    """
+    if not (NETLIFY_TOKEN and NETLIFY_SITE_ID):
+        return {}
+
+    try:
+        reponse = requests.get(
+            f"https://api.netlify.com/api/v1/sites/{NETLIFY_SITE_ID}/submissions",
+            headers={"Authorization": f"Bearer {NETLIFY_TOKEN}"},
+            timeout=20,
+        )
+        reponse.raise_for_status()
+        soumissions = reponse.json()
+    except requests.RequestException as e:
+        print(f"[Statuts Netlify] Erreur (fonctionnalité ignorée) : {e}")
+        return {}
+
+    statuts = {}
+    dates = {}
+    for soumission in soumissions:
+        donnees = soumission.get("data", {})
+        lien = donnees.get("lien")
+        statut = donnees.get("statut", "")
+        cree_le = soumission.get("created_at", "")
+        if not lien:
+            continue
+        if lien not in dates or cree_le > dates[lien]:
+            statuts[lien] = statut
+            dates[lien] = cree_le
+
+    print(f"[Statuts Netlify] {len(statuts)} statut(s) récupéré(s).")
+    return statuts
+
+
 def deployer_netlify():
     """
     Publie le contenu de DOSSIER_SITE sur Netlify via leur API de déploiement
@@ -926,6 +1091,15 @@ def main():
 
     historique = charger_historique()
     nouveaux, actifs = mettre_a_jour_historique(retenus, historique)
+
+    # Les objets de `actifs` sont les mêmes que ceux stockés dans
+    # `historique` (mêmes références) : les modifier ici met aussi à jour
+    # l'historique, qui sera sauvegardé juste après.
+    statuts = recuperer_statuts_netlify()
+    for item in actifs:
+        if item.get("lien") in statuts:
+            item["statut"] = statuts[item["lien"]]
+
     sauvegarder_historique(historique)
     print(f"Nouveaux depuis la dernière exécution : {len(nouveaux)}")
 
