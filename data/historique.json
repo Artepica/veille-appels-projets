@@ -1158,7 +1158,8 @@
     "resume": "Volet 3 Soutien auxprojetsd'éducation aux médias et aunumérique,àdestination des jeunes La Branche Famille poursuit le déploiement du dispositif « Promeneurs du Net » (PdN), identifié comme un outil pertinent et innovant d'éducationàla citoyenneté et de prévention des risques (radicalisation, cyberviolence, harcèlement).",
     "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
     "score": 9,
-    "premiere_detection": "2026-09-12"
+    "premiere_detection": "2026-09-12",
+    "statut": "archive"
   },
   "4f20add272b8250175984b573c8e8fbb740a4bae87cb0301553a610e8df0e36f": {
     "titre": "Appel à initiatives - Cultivons l'art en milieu rural | Cnap",
@@ -1407,6 +1408,94 @@
     "titre": "Education aux médias : le fonds Values lance son premier appel à projets",
     "lien": "https://africaintimes.com/2026/04/education-aux-medias-le-fonds-values-lance-son-premier-appel-a-projets/",
     "resume": "Values.mediainaugure son fonds de dotation avec un premierappelàprojetsdestinéauxassociations engagées pour l'éducationauxmédiaset la défense des valeurs démocratiques. Créé pour soutenir des initiatives d'intérêt général, ce fonds viseàfinancer et accompagner desprojetsportés par des structuresàbut non lucratif, avec un focus sur le pluralisme de l ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "bdec3c84b14fc5e41e0b98208d92e5460e7e7280fce613eb133180f3fb2a3987": {
+    "titre": "PDF« APPEL A PROJETS » Appel à Projets de la Fondation Crédit Agricole ...",
+    "lien": "https://fondation.ca-aquitaine.fr/wp-content/uploads/2025/03/Reglement-Appel-a-Projets-2025.pdf",
+    "resume": "Suite au succès du premierappelàprojetssur la thématique de laSanté desJeunesen 2024 et en cohérence avec la grande cause nationale 2025 sur lasantémentale, la Fondation Crédit Agricole Aquitaine ouvre un deuxième volet de soutien en 2025 : elle renouvelle son engagement auprès desjeunesde 0à25 ans sur la thématique de lasantémentaleen soutenant des initiatives et ...",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 4,
+    "premiere_detection": "2026-09-12"
+  },
+  "22cbfbb48a4ae2dab2a20e755195f79c97c584662401c13bf85dba5e74b87f00": {
+    "titre": "Fabrique Territoires Santé | Appel à projets : \"Solidarité et santé ...",
+    "lien": "https://www.fabrique-territoires-sante.org/appel-a-projets-solidarite-et-sante-fondation-credit-agricole-jusquau-07-11-2025/",
+    "resume": "Objectifs desprojetséligibles : Favoriser l'accès aux soins, le bon déroulement du parcours de santé et plus globalement, toute action de préservation de l'état de santé des jeunes protégés, qu'il s'agisse de santé mentale et/ou somatique. Exemples : Accompagnement psychologique, Détection précoce du développement de troubles psychiques, Médiation dans les hôpitaux ...",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "f771794900cab35aec52252cd136f8a3699d6ea01330434a4000a389f369e31a": {
+    "titre": "Éducation aux médias : appel à projets scolaires 2026-2027",
+    "lien": "https://www.federation-wallonie-bruxelles.be/actualite/news/education-aux-medias-appel-a-projets-scolaires-2026-2027",
+    "resume": "Le Conseil supérieur de l'éducationauxmédiaslance sonappelàprojetsscolaires annuel destinéauxenseignants. La thématique : \" Former des élèves acteurs de l'information \". De la maternelleàla fin du secondaire, les élèves évoluent dans un environnement où l'information est omniprésente, rapide, abondante. Cette surabondance transforme leur rapport au savoir,àl ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "40600ae94f489a49f6bda531333bf447a5018ea9a6585ff69f1cabb75182d6f0": {
+    "titre": "A la carte — INECAT Art & Thérapie",
+    "lien": "https://www.inecat.org/alacarte",
+    "resume": "Ala carte De quoi sagit-il ? C'est la possibilité pour des personnes extérieures de l'Inecat de participer aux cours théoriques et/ou ateliers expérientiels des formations \"art-thérapeute\" et \"concevoir et animer unemédiationartistiqueen relation d'aide\". C'est une inscription\"àla carte\".",
+    "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "addf62a92add29ab28b1747971e0e6bde0eb488d9b7c0847a2ebba667ff35717": {
+    "titre": "Parlez Jeunesse - 2025 - appel-a-projet.fondationhopitaux.fr",
+    "lien": "https://appel-a-projet.fondationhopitaux.fr/campagne-info?view=programme&cid=59",
+    "resume": "En 2025, année où lasantémentaleaété désignée par le Gouvernement comme grande cause nationale, l'engagement historique de la Fondation des Hôpitaux se poursuit plus que jamais. A cet effet, elle souhaite amplifier son actionàdestination desjeunesen souffrance en créant un nouvelappelàprojetsintitulé Parlez Jeunesse - en échoàsa nouvelle opération de collecte ...",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 3,
+    "premiere_detection": "2026-09-12"
+  },
+  "8b25be9731d3cba9b93ae221f7310b86b63f0327f598998cfd5ec1241270ae83": {
+    "titre": "[ APPEL À PROJETS ] Du... - Crédit Agricole du Languedoc - Facebook",
+    "lien": "https://www.facebook.com/creditagricoledulanguedoc/posts/-appel-%C3%A0-projets-du-1er-juillet-au-24-octobre-2025-nous-lan%C3%A7ons-la-5e-%C3%A9dition-de/1175498947948148/",
+    "resume": "[APPELÀPROJETS] 📢 Du 1er juillet au 24 octobre 2025, nous lançons la 5e édition de l'appelàprojets, autour de 𝐥'𝐚𝐜𝐜𝐨𝐦𝐩𝐚𝐠𝐧𝐞𝐦𝐞𝐧𝐭 𝐝𝐞𝐬 𝐓𝐫𝐚𝐧𝐬𝐢𝐭𝐢𝐨𝐧𝐬 sur notre territoire. 𝐏𝐨𝐮𝐫 𝐪𝐮𝐢 ?",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "fc51ffa4804d7b4bee022a98fe5639bcbb4d1c0f2902cedb347c9989c960030f": {
+    "titre": "Aides Tiers-Lieux | Aides France Relance",
+    "lien": "https://francetierslieux.aides-territoires.beta.gouv.fr/",
+    "resume": "FranceTiers-Lieux et Aides-territoires collaborent pour faciliter la recherche d'aides pour les porteurs deprojetet lestiers-lieux, en rendant visibles et accessibles les dispositifs de soutien existants. Cette page rassemble et structure ces informations dans le but de : Faire gagner du temps aux acteurs destiers-lieux.",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "47783e9d6984fe2386598593a71e58b0478bd1d0f98b69b9854c996f5034dc9b": {
+    "titre": "Lutte contre l'isolement des personnes âgées : appel à contributions de ...",
+    "lien": "https://www.carenews.com/appels-a-projet/lutte-contre-l-isolement-des-personnes-agees-appel-a-contributions-de-l-odas-et-de",
+    "resume": "Dans le cadre d'un partenariat entre l'Observatoiredel'action sociale (Odas) et la Caisse nationaledesolidarité pour l'autonomie (CNSA), le Lab'AUdel'Odas lance unappelàcontributions pour repérer, puis promouvoirdesprojetsinnovants permettantdefavoriser leliensocialetdelutter contre l'isolementdespersonnes âgées.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "3233e2948127d669b35c238b797d0d0d456fe5c6bc39f261bc9a6f8c1a20903e": {
+    "titre": "Isolement des personnes âgées en France - Fondation de l'Avenir",
+    "lien": "https://www.fondationdelavenir.org/appel-projet/isolement-des-personnes-agees-en-france-4/",
+    "resume": "Leprojetd'action innovante soumis pourra porter sur l'unedesthématiques suivantes : - La lutte contre l'isolementdespersonnes âgées ; - Lelienintergénérationnel. Le comitédegestion désignera jusqu'à deuxprojetslauréats pour un montantdesoutienàhauteurde20 000 euros par lauréat.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 2,
+    "premiere_detection": "2026-09-12"
+  },
+  "8abd111f17b32ac74b3b9aa7d3fbb9ce09e67e32ee610209d5442390212925b4": {
+    "titre": "Appel à projet Education aux médias et à l'information",
+    "lien": "https://www.lapartcitoyenne.fr/ressources/appel-a-projet-education-aux-medias-et-a-l-information",
+    "resume": "L'appelàprojetvalorisera lesprojetsqui permettent d'acquérir des compétences pour réaliser une lecture critique et distanciée des contenus proposés par lesmédiaset ceux qui permettront d'appréhender les lesmédias, les réseaux et les phénomènes informationnels dans toutes leurs dimensions.",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 1,
+    "premiere_detection": "2026-09-12"
+  },
+  "34ef373b28f43ae176d26b87cd103a2e2029f0aa4d6ea97912c1cf8792d9c59b": {
+    "titre": "Appel à propositions - Alphabétisation transfrontalière des médias",
+    "lien": "https://digital-strategy.ec.europa.eu/fr/funding/call-proposals-cross-border-media-literacy",
+    "resume": "La Commission lance l'appel «Europe créative» (3 millions d'EUR) pour desprojetstransfrontaliers innovants d'éducationauxmédias, visantàrenforcer la résilience de la société faceàla désinformation etàla manipulation de l'information.",
     "source": "Recherche web (fondation appel à projets éducation aux médias)",
     "score": 1,
     "premiere_detection": "2026-09-12"
