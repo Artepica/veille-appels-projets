@@ -263,17 +263,6 @@
     "score": 4,
     "premiere_detection": "2026-09-07"
   },
-  "261724fe2ba49745c7c64c982a7e1d96e96aef708fbf62cc3c9e92ba8fa7e646": {
-    "titre": "Appel à candidatures Incub’Asso  -  Fondation bouygues telecom",
-    "lien": "https://www.carenews.com/fondation-bouygues-telecom/appels-a-projet/appel-a-candidatures-incub-asso-0",
-    "resume": "L’appel à candidatures d’Incub’Asso, l’incubateur de la Fondation Bouygues Telecom dédié aux jeunes associations, est ouvert jusqu'au 13 septembre 2026.\r\n\r\nPour la 5ème année, la Fondation sélectionnera 5 associations de moins de 3 ans, qui s'appuient sur des bénévoles pour agir et créer du ...\nPar\nFondation Bouygues Telecom",
-    "financeur": "Fondation Bouygues Telecom",
-    "date_publication": "2026-08-25",
-    "date_cloture": "2026-09-13",
-    "source": "Carenews",
-    "score": 3,
-    "premiere_detection": "2026-09-07"
-  },
   "05745e3600cb0bb94dcd7ad85e3017ac687f7219800bccf2d8885a865883fdb1": {
     "titre": "Appel à projets « Prix Philoxenia 2027 : la jeunesse s’exprime par le court métrage »  -",
     "lien": "https://www.carenews.com/appels-a-projet/appel-a-projets-prix-philoxenia-2027-la-jeunesse-s-exprime-par-le-court-metrage",
@@ -799,7 +788,8 @@
     "resume": "La FondationgroupeCasino et Ulule lancent la 2e éditionde\"Retisser lesliensdu quotidien\" pour soutenirdesassociations qui font vivre cette entraide au quotidien et recréent duliensocialauprèsdespublics touchés par la précarité ordinaire. Vous portez ce typedeprojet? Candidatezàl'appelàprojetsavant le 29 juin ...",
     "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
     "score": 1,
-    "premiere_detection": "2026-09-07"
+    "premiere_detection": "2026-09-07",
+    "statut": "archive"
   },
   "78f6fc7bb12287cee8b035d91ca93ea407e3f08ac9c7494e0d4cb05bee19be73": {
     "titre": "Portail des subventions aux associations du ministère des ... - Outre-mer",
@@ -1134,7 +1124,8 @@
     "resume": "Découvrez la gamme complète de prêts pour financer votre activité associative duCréditAgricole",
     "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
     "score": 1,
-    "premiere_detection": "2026-09-07"
+    "premiere_detection": "2026-09-07",
+    "statut": "archive"
   },
   "cf3150c0c1889bcf13ff4e8b4b73c39152a75b9a1d568cee115b76251c5421b4": {
     "titre": "La parole collective pour rompre l'isolement - Centre Primo Levi",
@@ -1142,7 +1133,8 @@
     "resume": "Le Centre Primo Levi a récemment mis en place ungroupedeparolepour ses patientes et patients, avec le butderenouer leliensocial, et renforcer le soin. Notre centredesoins a constaté l'isolement important dans lequel vivent nos patientes et patients, y compris celles et ceux ayant trouvé en Francedesliensavec leur communauté d ...",
     "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
     "score": 1,
-    "premiere_detection": "2026-09-07"
+    "premiere_detection": "2026-09-07",
+    "statut": "archive"
   },
   "03fd4f247cf740b4a567f31c0a762da7555f36d2e82726d81f8e8fed6b4646d3": {
     "titre": "Cinéma outre-mer — AJUCA, Association des Jeunes Ultramarins",
@@ -1167,7 +1159,8 @@
     "resume": "Dans un contexte où le secteur artistique traverse de fortes tensions et où les moyens dédiésàla création dans les territoires ruraux sont fragiles, la Fondation de France Centre-Est renouvelle son engagement en lançant l'édition 2026 de sonappelàinitiatives : Cultivons l'art en milieurural: vers des permanences artistiques de territoires. Les initiatives doivent être ...",
     "source": "Recherche web (appel à projets art citoyenneté rural)",
     "score": 5,
-    "premiere_detection": "2026-09-12"
+    "premiere_detection": "2026-09-12",
+    "statut": "archive"
   },
   "4fca57b6fd6f8e1ede42eb22c28b4c8558335173dfa3412054a11cee4509d54f": {
     "titre": "MSA - Grandir en milieu rural - MSA Portes de Bretagne",
@@ -1223,7 +1216,8 @@
     "resume": "En 2025, la première édition de cetappelàinitiatives cible des initiatives situées en milieurural, exclusivement dans les départements de l'Isère, du Rhône, de la Loire et de la Côte d'Or.",
     "source": "Recherche web (appel à projets art citoyenneté rural)",
     "score": 3,
-    "premiere_detection": "2026-09-12"
+    "premiere_detection": "2026-09-12",
+    "statut": "archive"
   },
   "f33a6d63ff616385165d72707bed9d91543171b965788f2e439ff42f9b2eeaae": {
     "titre": "Cultivons l'art en milieu rural : vers des permanences artistiques de ...",
@@ -1499,5 +1493,29 @@
     "source": "Recherche web (fondation appel à projets éducation aux médias)",
     "score": 1,
     "premiere_detection": "2026-09-12"
+  },
+  "e27f02c9820da59e433ec52fb528e665d8d6c94fc86e89544c896a6fa7a1d271": {
+    "titre": "Appel à candidatures Jeune Creation Photographique - Planches Contact ...",
+    "lien": "https://planchescontact.fr/en/appel-a-candidatures/",
+    "resume": "l'appelàcandidature pour le prix de lejeunecréation photographique 2026 est désormais clôturé THE YOUNG PHOTOGRAPHIC CREATION AWARD The Young Photographic Creation Award invites young photographers to develop innovative projects and explore new artistic expressions.",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 5,
+    "premiere_detection": "2026-09-14"
+  },
+  "b6899eff815068cef97c31b5f304ef275dfbbb4267657667e2e4fccda2f9a7ed": {
+    "titre": "Appel à projets 2025 | Axe Art Citoyen - RESACOOP",
+    "lien": "https://www.resacoop.org/appel-projet/appel-a-projets-2025-axe-art-citoyen/",
+    "resume": "La Fondation Daniel et Nina Carasso lance sonappelàprojets2025 rn faveur des initiatives artistiques collaboratives.",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 5,
+    "premiere_detection": "2026-09-14"
+  },
+  "222ebc794ce102203675760578d98cebb0589f61b4ddf7e4e40e717706aa8390": {
+    "titre": "Aide sociale à l'enfance : Accompagner les jeunes dans leur vie d ...",
+    "lien": "https://www.fondation-ca-solidaritedeveloppement.org/appel-a-projets/aide-sociale-a-lenfance-accompagner-les-jeunes-dans-leur-vie-dadulte/",
+    "resume": "La FondationCréditAgricoleSolidarité et Développement propose unappelàprojetspour soutenir des solutions concrètes, structurantes et pérennes afin d'accompagner les jeunes, âgés de 16à25 ans, pris en charge par les services de l'ASE ou l'ayant été, vers une insertion sociale et professionnelle réussie.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 2,
+    "premiere_detection": "2026-09-14"
   }
 }
