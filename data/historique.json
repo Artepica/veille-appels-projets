@@ -666,28 +666,6 @@
     "score": 1,
     "premiere_detection": "2026-09-07"
   },
-  "d6974a5d55ff451bee27a365df461a0458ce89539e6a7faefbe1d587baf92fb3": {
-    "titre": "Appel à projets : Briser le silence sur « L’Hécatombe Invisible » provoquée par les centrales nucléaires   -",
-    "lien": "https://www.carenews.com/appels-a-projet/appel-a-projets-briser-le-silence-sur-l-hecatombe-invisible-provoquee-par-les",
-    "resume": "Chaque minute, une centrale nucléaire à circuit ouvert pompe l’équivalent d’une piscine olympique d’eau, entraînant l’asphyxie et la destruction de plus de 5,9 milliards d'êtres vivants (œufs, larves, poissons, crustacés) chaque année en France.\r\n\r\nDans le cadre de sa campagne nationale issue du ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-07-29",
-    "date_cloture": "2026-09-15",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-07"
-  },
-  "d0523948e9afb67061e19f441beacf242379c0721191ca3a0f8ecb095e381432": {
-    "titre": "Trophées Eau Solidaire  -",
-    "lien": "https://www.carenews.com/appels-a-projet/trophees-eau-solidaire",
-    "resume": "Trophées Eau Solidaire, un appel à projets à destination des associations et des entreprises sociales du territoire\r\n\r\nAprès une première édition réussie en 2020, l’Eau d’Ile-de-France lance la deuxième édition des Trophées Eau Solidaire, un appel à projets ambitieux à destination des associations ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-07-21",
-    "date_cloture": "2026-09-15",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-07"
-  },
   "f8ed9e4c1c07c4f0385d75386066878cfb3dfaa2b5ebeedddbebb248b2363c49": {
     "titre": "Appel à prix - Prix de l'innovation Troubles des conduites alimentaires  -",
     "lien": "https://www.carenews.com/appels-a-projet/appel-a-prix-prix-de-l-innovation-troubles-des-conduites-alimentaires",
@@ -1517,5 +1495,16 @@
     "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
     "score": 2,
     "premiere_detection": "2026-09-14"
+  },
+  "921c3b735ae0fa4274709635b77d45e823ba6bf89f838053226ab206e827e280": {
+    "titre": "Bourses Entreprendre pour l'Impact  -",
+    "lien": "https://www.carenews.com/appels-a-projet/bourses-entreprendre-pour-l-impact",
+    "resume": "Le programme de Bourses Mécénat by Garance est dédié aux apprentis et aux futurs entrepreneurs pour les aider dans leur scolarité ou dans mise en œuvre de leur projet professionnel.​\r\n\r\nPour les étudiants/apprentis futurs entrepreneurs​\r\n\r\n\r\n​Le programme de Bourses est dédié aux étudiants et ...\nPar",
+    "financeur": "",
+    "date_publication": "2026-09-14",
+    "date_cloture": "2026-12-15",
+    "source": "Carenews",
+    "score": 1,
+    "premiere_detection": "2026-09-21"
   }
 }
