@@ -613,28 +613,6 @@
     "score": 2,
     "premiere_detection": "2026-09-07"
   },
-  "f8ed9e4c1c07c4f0385d75386066878cfb3dfaa2b5ebeedddbebb248b2363c49": {
-    "titre": "Appel à prix - Prix de l'innovation Troubles des conduites alimentaires  -",
-    "lien": "https://www.carenews.com/appels-a-projet/appel-a-prix-prix-de-l-innovation-troubles-des-conduites-alimentaires",
-    "resume": "La Fondation Sandrine Castellotti (FSC) a pour objet, parmi ses différentes actions, d’améliorer la prise en charge des patientes et des patients souffrant d’un trouble des conduites alimentaires (TCA) : anorexie mentale, boulimie nerveuse, hyperphagie boulimique, en aidant et en soutenant les ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-07-08",
-    "date_cloture": "2026-10-15",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-07"
-  },
-  "5f167c00c6fb865a9865f0cae494732f8fc9748226094a58f299b7da26af194b": {
-    "titre": "EplS Initiative - Entreprendre pour la solidarité  -",
-    "lien": "https://www.carenews.com/appels-a-projet/epls-initiative-entreprendre-pour-la-solidarite",
-    "resume": "Le Fonds de dotation \"Entreprendre pour la Solidarité\" lance la 3ème édition de son appel à projets \"EplS Initiative\" :\r\n\r\n \r\n\r\n\r\n\tPour les associations de moins de 5 ans (créées à compter du 01/01/2021)\r\n\tPortant des projets solidaires dans les domaines de l’emploi, du logement ou de la vie en ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-06-08",
-    "date_cloture": "2026-10-15",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-07"
-  },
   "cca2efaa0acac20c8aae3d948710abcf0cc02b6fa2799494439b7ecbb60c8e29": {
     "titre": "PDFAppel a Projets Jeunes",
     "lien": "https://mps.msa.fr/lfp/documents/98775/407043911/APJ+2025+-+Cahier+des+charges.pdf",
@@ -1412,28 +1390,6 @@
     "score": 1,
     "premiere_detection": "2026-09-21"
   },
-  "ee8edc2ebcfdf24745129a6a1e0d03af85878b0887f5cab2546a7841b5445480": {
-    "titre": "Dota Bene 2026 : consolider les solutions d'innovation sociale  -",
-    "lien": "https://www.carenews.com/appels-a-projet/dota-bene-2026-consolider-les-solutions-d-innovation-sociale",
-    "resume": "Le Groupe Matmut lance Dota Bene, son nouveau fonds de dotation, dédié au soutien de solutions d’innovation sociale et son premier appel à projets, le 17 septembre.\r\n\r\n\r\nChaque année, de nouveaux projets d’innovation sociale voient le jour. Après quelques temps d’existence, certains peinent à ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-09-21",
-    "date_cloture": "2026-10-12",
-    "source": "Carenews",
-    "score": 1,
-    "premiere_detection": "2026-09-28"
-  },
-  "0d195ef2d8f2f7cbc6e606f473bd99880a9a780fb88f5203aeedc0fab06d3cf1": {
-    "titre": "Prix Diftember  -",
-    "lien": "https://www.carenews.com/appels-a-projet/prix-diftember",
-    "resume": "A l’occasion de Diftember, notre temps fort de la générosité, Dift soutient 3 associations souhaitant lancer un Challenge de collecte et mobiliser leur communauté en décembre 2026.\r\n\r\nPour chaque euro collecté par les 3 associations lauréates, Dift ajoutera un euro sur les cagnottes de ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-09-23",
-    "date_cloture": "2026-10-13",
-    "source": "Carenews",
-    "score": 0,
-    "premiere_detection": "2026-09-28"
-  },
   "71db282028ce5c14111a6e6dc958b87a01b43a1e69f26040a3e1ff286c18fa67": {
     "titre": "Jusqu'à 5 000 € pour des projets franco-allemands  -  Fonds citoyen franco-allemand",
     "lien": "https://www.carenews.com/fonds-citoyen-franco-allemand/appels-a-projet/jusqu-a-5-000-eu-pour-des-projets-franco-allemands",
@@ -1455,5 +1411,16 @@
     "source": "Carenews",
     "score": 3,
     "premiere_detection": "2026-10-12"
+  },
+  "2a1721e8717f24bc029c417aa1e88ae06f9e05284dbde6758438c938a2e29c37": {
+    "titre": "Fondation Crédit Agricole Solidarité et Développement : accompagner les jeunes de l’ASE dans leur vie d’adulte  -  Le groupe crédit agricole",
+    "lien": "https://www.carenews.com/le-groupe-credit-agricole/appels-a-projet/fondation-credit-agricole-solidarite-et-developpement",
+    "resume": "Du 28 septembre au 9 novembre 2026, la Fondation Crédit Agricole Solidarité et Développement lance un appel à projets auprès d’organismes d’intérêt général agissant en faveur des jeunes confiés ou ayant été confiés à l’Aide sociale à l’enfance.\nPar\nLe Groupe Crédit Agricole",
+    "financeur": "Le Groupe Crédit Agricole",
+    "date_publication": "2026-10-19",
+    "date_cloture": "2026-11-09",
+    "source": "Carenews",
+    "score": 4,
+    "premiere_detection": "2026-10-19"
   }
 }
