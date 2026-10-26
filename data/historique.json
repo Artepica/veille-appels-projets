@@ -204,7 +204,7 @@
     "lien": "https://musiquecontemporaine.org/aides-concours-appels/appel-projets-mediations-et-democratie-culturelle-encourager-la-participation",
     "resume": "La 4e édition de l'appelàprojetsMédiations et démocratie culturelle destinéàsoutenir des initiatives artistiques et culturelles conçues avec et pour les habitant·e·s, dans les territoires ruraux et proposé par la Fondation Daniel &amp; Nina Carasso, est ouvert.Il s'adresseàcell",
     "source": "Recherche web (appel à projets art citoyenneté rural)",
-    "score": 4,
+    "score": 6,
     "premiere_detection": "2026-09-07"
   },
   "6c0776bc3b4c878f8e4716bf301c843fff43ca864d982ca4472ba9429932f4b8": {
@@ -432,17 +432,6 @@
     "resume": "La préfecture de Saint-Pierre-et-Miquelon lance unappelàprojetspour les subventions du ministère desoutre-merauxassociationsen 2025. Lesprojetsdoivent concerner les secteurs de laculture, la cohésion sociale, la santé, l'éducation, lajeunesse, les sports, etc.",
     "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
     "score": 3,
-    "premiere_detection": "2026-09-07"
-  },
-  "28cf586426a73fc76a6bbb01c4d2f196cc7365b71a8389dee7759d14bb224e57": {
-    "titre": "Appel à films : 6ème édition du Prix Arts Convergences  -",
-    "lien": "https://www.carenews.com/appels-a-projet/appel-a-films-6eme-edition-du-prix-arts-convergences",
-    "resume": "L’association Arts Convergences lance la 6e édition de son Prix Vidéo, proposé sous forme d’appel à projets ouvert à toutes et à tous, pour des films de 4’Max, tous genres confondus (documentaire, fiction, animation), autour du thème des maladies psychiques.\r\n\r\n« Je ne rentre pas dans une ...\nPar",
-    "financeur": "",
-    "date_publication": "2026-04-22",
-    "date_cloture": "2026-10-19",
-    "source": "Carenews",
-    "score": 2,
     "premiere_detection": "2026-09-07"
   },
   "d0c322117d5622dd7025708fa1937a7144b2f3d783b1091eeac452a5e350cf60": {
@@ -1232,7 +1221,7 @@
     "lien": "https://devenir.art/appels/",
     "resume": "Cetappelàcandidatures propose aux artistes, duo d'artistes ou collectifs de répondre en émettant leur souhait de participer. L'artiste répond en démontrant la cohérence de sa proposition avec son travailartistiqueàtravers un book, une courte note d'intention, et une esquisse deprojet.",
     "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
-    "score": 2,
+    "score": 3,
     "premiere_detection": "2026-09-12"
   },
   "d6091ca3022142e42189bfe17b4e91bac6fe2ed19aba116006d71ff245d4f39f": {
@@ -1422,5 +1411,248 @@
     "source": "Carenews",
     "score": 4,
     "premiere_detection": "2026-10-19"
+  },
+  "cff7d09131458fff400f8c49c0ac228b2e8a3bee91a686336e0756eb6550eea6": {
+    "titre": "9 projets artistiques pour faire vivre la citoyenneté en milieu rural",
+    "lien": "https://fondationcarasso.org/nouvelles/art-et-citoyennete-en-milieu-rural/",
+    "resume": "L'art comme moteur decitoyennetéen milieurural: découvrez des initiatives qui encouragent la participation et l'engagement local.",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 5,
+    "premiere_detection": "2026-10-26"
+  },
+  "3bba74705628fc917dd3ee6d4e437ed607154d72787c211ca2642fc2b6a012e6": {
+    "titre": "Appel à projets Santé des jeunes - Plateforme Appelaprojets.org",
+    "lien": "https://www.appelaprojets.org/appelprojet/display/3347",
+    "resume": "Détail Engagée depuis sa création en faveur de lasantépublique, la Fondation CNP Assurances, a annoncé en décembre dernier, son nouvel axe stratégique « Pour lasantédesjeunes». La Fondation CNP Assurances lance,àpartir du 6 février 2025, unappelàprojetssur ce thème.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 5,
+    "premiere_detection": "2026-10-26"
+  },
+  "f0d37b9e09e95dfee55ebfe2ce459bcb0df8d91da15f66dd6e650d1bdbe80e75": {
+    "titre": "La Fondation Engagement Médias pour les Jeunes réitère l'appel à ...",
+    "lien": "https://www.fondationdefrance.org/fr/appels-a-projets-fa/candidatez-a-lappel-a-projets-2026-ma-parole-de-la-fondation-engagement-medias-pour-les-jeunes",
+    "resume": "La maîtrisedel'expression écrite et orale, ainsi que la confiance en soi pour s'exprimer, demeurentdespiliers fondamentauxdel'inclusiondesjeunes citoyens. Dans la continuitédeson engagement, la Fondation Engagement Médias pour les Jeunes réitère une fois encore sonappelàprojets« MaParole! », visantàsoutenirdesinitiatives etdesstructures d'intérêt général ...",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 5,
+    "premiere_detection": "2026-10-26"
+  },
+  "dbe461876587748d86183f0ea9409dfb1064f218c4674b87c4612bd5e3cd044a": {
+    "titre": "Fondation Crédit Agricole Solidarité et Développement : appel à projets ...",
+    "lien": "https://www.avise.org/agenda/fondation-credit-agricole-solidarite-et-developpement-appel-projets-pour-soutenir-les-jeunes",
+    "resume": "La FondationCréditAgricoleSolidarité et Développement lance unappelàprojets2026-2027 pour l'insertion sociale et professionnelle des jeunes de 16à25 ans pris en charge, ou anciennement pris en charge, par l'aide socialeàl'enfance (ASE). L'enveloppe totale est de 400 000 €, pour une vingtaine deprojets.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 4,
+    "premiere_detection": "2026-10-26"
+  },
+  "82cb68adffa1e815fd71e21ced43eb0d1ab36eb5b70d7a43765745d0764b2689": {
+    "titre": "Appel à Projets 2026 Ma Parole ! de la Fondation Engagement Médias pour ...",
+    "lien": "https://www.francetelevisions.fr/groupe/notre-actualite/appel-a-projets-ma-parole-de-la-fondation-engagement-medias-pour-les-jeunes-51995",
+    "resume": "LaFondationEngagementMédiaspour les Jeunes, réunissant France Télévisions et sa régie FranceTV Publicité, FranceMédiasMonde et TV5 Monde, sous l'égide de laFondationde France, lance un nouvelappelàprojetsqui viseàpoursuivre le soutien des initiatives et des structures d'intérêt général orientées vers la valorisation de l'expression écrite et orale. Ces actions ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 4,
+    "premiere_detection": "2026-10-26"
+  },
+  "58577d3e8cf330182a91fe318108369382db9bd28bf85b65fa26301d584744cf": {
+    "titre": "Appel à projets régional - résidences d'artiste en ruralité",
+    "lien": "https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/appels-a-projet-partenaires/appel-a-projets-regional-residences-d-artiste-en-ruralite",
+    "resume": "Appelàprojetsrégional - résidences d'artiste en ruralité Depuis de nombreuses années la DRAC des Pays de la Loire inscrit ses dispositifs culturels dans les axes structurants des politiques territoriales de l'Étatàl'attention des zones rurales.",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 4,
+    "premiere_detection": "2026-10-26"
+  },
+  "bc375b4026a444f37c708ff947b57b974c70070a44d9883bba66e1dcecaad2ba": {
+    "titre": "Appel à projets : lutte contre le décrochage scolaire",
+    "lien": "https://associations.aubervilliers.fr/2025/05/27/appel-a-projets-lutte-contre-le-decrochage-scolaire/",
+    "resume": "Lutte contre leharcèlementscolaireSoutienàla parentalité Prise en charge des problèmes desantéSensibilisationàla citoyenneté et aux valeurs de la République. Des précisions sur lesprojetsattendus sont disponibles dans l'Appelàprojetstéléchargeable ci-dessous. Qui peut en bénéficier ?",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 4,
+    "premiere_detection": "2026-10-26"
+  },
+  "26fddfecf5fec116bd506e09f9e7fd843ffa5bb80fcc555a5297640b8fb10b12": {
+    "titre": "L'appel à projets 2026 pour les personnes âgées est en ligne",
+    "lien": "https://www.fondationhopitaux.fr/lutter-contre-lisolement-des-personnes-agees-lappel-a-projets-2026-est-lance/",
+    "resume": "Pour poursuivre son action contre l'isolementdespersonnes âgées, la FondationdesHôpitaux lance sonappelàprojets2026, dédié au financementdetiers-lieux et d'activités en EHPAD et en servicesdegériatrie.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 4,
+    "premiere_detection": "2026-10-26"
+  },
+  "b07167f55c3190ccb535ce677e3e14e5445d16ab8f56fbc30bfee97e8cce200e": {
+    "titre": "MSA - L'Appel à projets jeunes - MSA Loire-Atlantique - Vendée",
+    "lien": "https://loire-atlantique-vendee.msa.fr/lfp/msa-jeunes/appel-projet",
+    "resume": "Acteur engagé sur les territoires ruraux, la MSA accorde une attention particulière aux 11-22 ans. Avec son dispositif d'appelàprojets, elle les accompagne et les aideàmettre en place leurs propres actions. Ainsi, la MSA favorise la prise de responsabilité des jeunes et leur participationàl'évolution des territoires ruraux.",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "6c050cc82063c5b5b83c8f76f3d7814ffc0b217835fad309097c00e95d9ccfbb": {
+    "titre": "Déposer un dossier (AAP) | Fondation Crédit Agricole Solidarité et ...",
+    "lien": "https://www.fondation-ca-solidaritedeveloppement.org/dossier/deposer-un-dossier-aap/",
+    "resume": "La FondationCréditAgricoleSolidarité et Développement poursuit son engagement auprès des jeunes de l'Aide socialeàl'enfance pour sonappelàprojets2026-2027. Le 28 septembre, la FondationCréditAgricoleSolidarité et Développement lance son deuxièmeappelàprojetsdestinéàsoutenir les jeunes accompagnés ou ayant été pris en charge par l'Aide socialeàl ...",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "51d0421fca9a37afd23e7ae3dab2adc1bcb960158e205ceda0aa9da222cb0bbe": {
+    "titre": "Appel à projets 2026 Fondation Crédit Agricole Solidarité et ...",
+    "lien": "https://www.fondation-capca.com/index.php/2026/10/01/appel-a-projets-2026-fondation-credit-agricole-solidarite-et-developpement/",
+    "resume": "La Fondation privilégie les initiatives associatives qui proposent des solutions structurantes et durables. Cetappelàprojetsrenforce l'engagement de la Fondation en faveur de l'autonomie des personnes en difficulté, en cohérence avec leprojetsociétal du groupeCréditAgricoleet sa mission de façonneur des territoires.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "f3224d44f8326f0c1f362334789fe0432d275a2c4b15fb687b60199d737bc09b": {
+    "titre": "Fondation Crédit Agricole d'Ille-et-Vilaine - Accueil",
+    "lien": "https://www.fondation-ca-illeetvilaine.fr/",
+    "resume": "La FondationCréditAgricoled'Ille-et-Vilaine agit essentiellement au travers de ses deuxappelsàprojets, illustrant sa volonté d'agir en partenaire durable des acteurs clés du département.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "3d3a0fbbcac056acb8fc08f34ef8850a1fdf00094cd233a4e3d409f34f302b7c": {
+    "titre": "Éducation aux médias - Fondation Varenne",
+    "lien": "https://www.fondationvarenne.fr/education-aux-medias/",
+    "resume": "PARTENARIATS Depuis 30 ans, laFondationVarenne multiplie les accompagnements en matière d'éducationauxmédias.Àtel point, qu'en 2015, la Ministre de l'Éducation Nationale a consacré cette reconnaissance par une convention cadre qui fait, aujourd'hui encore, autorité. Au delà de cette convention, de nombreux autres partenariats sont liés et des opérations organisées avec ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "7cd5772cf17e5eb9710004697f8c05988d32ab3951979d75ba8eb6be43f5c8b6": {
+    "titre": "Appels à projets | ARTCENA",
+    "lien": "https://www.artcena.fr/annonces/appels-a-projets",
+    "resume": "Appelàcandidatures-Résidence de créationartistiqueau Caveau-2027 La CLEF Fegersheim 16 juin 2026",
+    "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "d32a097af81c54d42aea28e5649fc161d6fd42b4de461555cdbb4cfa1330e52e": {
+    "titre": "Appel a Projet 2025 a Destination Des Etablissements Scolaires",
+    "lien": "https://www.grand-est.ars.sante.fr/media/136993/download?inline",
+    "resume": "- Se fonder sur la charte d'intervention en milieuscolaire(cf. annexe 1) et sur les orientations nationales et régionales en matière d'actions depréventionet de promotion de lasantéàdestination des publicsjeunes(cf. annexe 2).",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "93b1d6a56a4dc8978f016b9f90514ff55a82f2d877919a04df057083995e8191": {
+    "titre": "Appel à projets Tiers-Lieux dédiée à la production et Espaces de ...",
+    "lien": "https://www.communaute-paysbasque.fr/aides-et-financements/aide-et-financement/appel-a-projets-tiers-lieux-dediee-a-la-production-et-espaces-de-fabrication-partages",
+    "resume": "Cetappelàprojetsest destinéàsoutenir en phase d'amorçage : Toutprojetde création d'untiers-lieude production, ou lancement d'une nouvelle activité de soutienàla production locale dans untiers-lieuexistant.",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "9b42438110b284a9540567176451abb1c70feaa877798992a5526664b4d96aba": {
+    "titre": "PDFAppel À Projets Lien Social & Innovation",
+    "lien": "https://www.carsat-mp.fr/files/live/sites/carsat-mp/files/PDF/Partenaires/Soutenir-financierement-les-projets/AAP/AAP2026-CDC-MP.pdf",
+    "resume": "Dans ce cadre, la Carsat Midi-Pyrénées lance unappelàprojets2026 pour prévenir les risquesdeperte d'autonomie et lutter contre l'isolementdespersonnes retraitées. Cetappelàprojetsse positionne donc dans la continuitédesappelsàprojetsdesannées antérieures et dans la perspective d'accompagnerdenouvelles initiatives.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "843a061be7405b9a2d8f3c2da23d5438a5ef31a0c835d7c5d1e84eb4b54109dc": {
+    "titre": "Appel à projet Jeunesse Outre-mer - Jeunesse et sports - Culture ...",
+    "lien": "https://www.martinique.gouv.fr/layout/set/print/Actions-de-l-Etat/Culture-jeunesse-cohesion-sociale-education-Defenseur-des-droits/Jeunesse-et-sports/Appel-a-projet-Jeunesse-Outre-mer",
+    "resume": "L'appelàprojetsconcerne l'ensemble des territoires ultramarins, départements et régions d'Outre-mer(DROM) et collectivités d'Outre-mer(COM). Il s'adresse également auxassociationsqui agissent dans et depuis l'Hexagone au profit des jeunes ultramarins dans une logique de retour sur leur territoire d'origine.",
+    "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
+    "score": 3,
+    "premiere_detection": "2026-10-26"
+  },
+  "719a6e73a09d7716957c9d52b77004834a3029bfa156447b166d165374da4f6f": {
+    "titre": "Je réponds à un appel à projets - Crédit Agricole",
+    "lien": "https://fondation.ca-aquitaine.fr/je-reponds-a-un-appel-a-projets/",
+    "resume": "Si votre association porte unprojetqui entre dans le champ d'action décrit dans le règlement de notreAppelàProjetsde l'année en cours, alors n'attendez pas pour déposer votre candidature.",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "f6f80b2b403ff4be3d0b2add3604c1fd2b22731fc4aff8735452311e9bca63b3": {
+    "titre": "Appels à projets des fondations abritées - Fondation de France",
+    "lien": "https://www.fondationdefrance.org/fr/appels-a-projets-fa",
+    "resume": "Vous recherchez un soutien pour votre structure et/ou votreprojetet nous vous remercions de l'intérêt que vous portezauxactions de laFondationde France. Nous vous informons que la plupart de nos financements sont attribués dans le cadre d'appelsàprojets.",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "7b145d4cc07661ef3e1ffaa730434cf385f4826e4a931002eb794b9ee564372a": {
+    "titre": "Appels à projets de la Fondation de France - Media Education",
+    "lien": "https://mediaeducation.fr/lesactions/appel-a-projet/",
+    "resume": "LaFondationde France lance sonappelàprojeten souhaitant soutenir desprojetsdestinésauxjeunes âgés de 2à18 ans.",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "975b31b23dcfc7f125cce05509e17d3aa75daa8c0905431eda7dd6b0eb4eef82": {
+    "titre": "Appel à projets régional Stop au harcèlement - LAURA-TT",
+    "lien": "https://www.laura-tt.fr/appel-a-projets-regional-stop-au-harcelement/",
+    "resume": "Chère madame, cher monsieur, La Région Auvergne-Rhône-Alpes se mobilise pour lutter contre leharcèlementscolaireet renouvelle sonappelàprojets« Stop auharcèlement! » auprès des écoles, des collèges, des lycées mais aussi des associations, du mouvement sportif et des communes et intercommunalités.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "cfe9988f16876087cb3594e2b935f0599071ab194f3e63da8adae8829d5a1903": {
+    "titre": "PDFAPPEL A PROJETS « Soutien au développement et à l'ancrage territorial ...",
+    "lien": "https://www.grandest.fr/wp-content/uploads/2025/06/reglement-aap-tiers-lieux-2025-2026-annexes.pdf",
+    "resume": "Depuis 2016, la Région Grand Est accompagne de manière volontariste la création et le développement detiers-lieux sur l'ensemble du territoire régional, considérant que ces lieux d'hybridation, de collaboration, d'innovation, de création, d'expérimentation et de transmission contribuentàconstruire l'économie et la société de demain.",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "db27a36d40d988c2d5e7c5c34590bf5b4912fb3d1b655a9a23face7992b361ca": {
+    "titre": "Innovation territoriale : le gouvernement du Québec annonce un appel de ...",
+    "lien": "https://www.quebec.ca/nouvelles/actualites/details/innovation-territoriale-le-gouvernement-du-quebec-annonce-un-appel-de-projets-72094",
+    "resume": "QUÉBEC, le 28 juill. 2026 /CNW/ -- Le gouvernement du Québec annonce l'ouverture d'unappeldeprojetspour soutenir des initiatives ciblées eninnovationterritoriale, dans le cadre du Fonds régions etruralité(FRR).",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "d7df48698da413c39a6e5114bdbc178e844de76061a16acb9588f7cd1c31583b": {
+    "titre": "Ma Parole ! - Agence Nationale de Lutte Contre l'Illettrisme",
+    "lien": "https://www.anlci.gouv.fr/appels-a-projets/ma-parole/",
+    "resume": "L'appelàprojets« MaParole! » viseàsoutenirdesassociations etdesorganismes d'intérêt général qui se consacrentàl'éloquence,àl'expression écrite et orale pour les jeunes âgésde14à30 ans en situationdevulnérabilité, tant en France métropolitaine que dans les territoires d'Outre-mer.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "24bb42b4210e32b891c5d86b07ef99436093a19ff3bd8c8d9e3742768d5c34fb": {
+    "titre": "Appel a projets local 2026 du ministère des Outre-mer - Culture ...",
+    "lien": "https://www.martinique.gouv.fr/Actions-de-l-Etat/Culture-jeunesse-cohesion-sociale-education-Defenseur-des-droits/Appel-a-projets-local-2026-du-ministere-des-Outre-mer",
+    "resume": "Cahier des charges définissant les conditions d'attribution des subventions auxassociations(Action 4 du programme 123) 1. Nature du porteur deprojet: L'appelàprojetslocal organisé par la préfecture de la Martinique s'adresse aux personnes moralesàbut non lucratif, principalement auxassociations. Les collectivités territoriales, fondations et établissements publics ...",
+    "source": "Recherche web (appel à projets outre-mer jeunesse culture association)",
+    "score": 2,
+    "premiere_detection": "2026-10-26"
+  },
+  "f99490ae9a1261e91c9e66b69bcf84412edf872ade4e92f44576cfb703ad3b1f": {
+    "titre": "Aventurier MAIF Sport Planète : pourquoi pas vous ?  -  Fondation maif",
+    "lien": "https://www.carenews.com/fondation-maif/appels-a-projet/aventurier-maif-sport-planete-pourquoi-pas-vous",
+    "resume": "Les candidatures sont ouvertes jusqu’au 15 novembre pour rejoindre l’équipe des Aventuriers MAIF Sport Planète 2027. À la clé : une aide pouvant aller jusqu’à 7 000 euros, un accompagnement médiatique et l’appui du réseau MAIF Sport Planète pour des projets qui associent aventure sportive, ...\nPar\nFondation MAIF",
+    "financeur": "Fondation MAIF",
+    "date_publication": "2026-10-19",
+    "date_cloture": "2026-11-15",
+    "source": "Carenews",
+    "score": 1,
+    "premiere_detection": "2026-10-26"
+  },
+  "6f3c6b3e5b4493892ae7b2a48307d6fef0856d4bc05a9a0b4b0ae2fcdcbd0c4e": {
+    "titre": "tous nos prêts immobilier et crédits conso - Crédit Agricole",
+    "lien": "https://www.credit-agricole.fr/particulier/credit.html",
+    "resume": "LeCréditAgricolevous accompagne pour financer vosprojets: vous loger, entreprendre des travaux, vous équiper, acheter une auto ….",
+    "source": "Recherche web (Crédit Agricole caisse locale appel à projets jeunesse)",
+    "score": 1,
+    "premiere_detection": "2026-10-26"
+  },
+  "0a182e2f2f48580fb3678097d67dd57a774c2485debd55a7f566e9aaa59e1cbe": {
+    "titre": "Appels à projets : Soyez soutenus par la Fondation de France",
+    "lien": "https://www.fondationdefrance.org/fr/etre-soutenu-par-la-fondation-de-france",
+    "resume": "Les programmes animés par laFondationde France fonctionnent parappelsàprojets. Sur chaque thématique (sociale, sociétale, environnement, éducation, recherche médicale, urgences ou droits humains…), nos comités experts définissent des stratégies d'intervention, qui guident ensuite la sélection desprojetssoutenus.",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 1,
+    "premiere_detection": "2026-10-26"
+  },
+  "6a087013e8e460449917c72e7b9b163e0541b174836652ffefa29f3a1b15f59b": {
+    "titre": "RURAL MOUV : Appel à initiatives Ruralinnov'8 pour faire émerger des ...",
+    "lien": "https://www.famillesrurales.org/13661/rural-mouv-appel-initiatives-ruralinnov8",
+    "resume": "RuralInnov'8 : « coopérations rurales, solidarités locales »L'édition 2026 de l'appelàinitiatives Ruralinnov' soutient desprojetsconstruits en coopération avec les acteurs locaux qui créent du lien, renforcent les solidarités et favorisent les échanges entre générations. L'objectif est d'impulser des expérimentations durables, susceptibles de faire émerger de nouveaux ...",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 1,
+    "premiere_detection": "2026-10-26"
   }
 }
