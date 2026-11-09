@@ -1379,17 +1379,6 @@
     "score": 1,
     "premiere_detection": "2026-09-21"
   },
-  "71db282028ce5c14111a6e6dc958b87a01b43a1e69f26040a3e1ff286c18fa67": {
-    "titre": "Jusqu'à 5 000 € pour des projets franco-allemands  -  Fonds citoyen franco-allemand",
-    "lien": "https://www.carenews.com/fonds-citoyen-franco-allemand/appels-a-projet/jusqu-a-5-000-eu-pour-des-projets-franco-allemands",
-    "resume": "Le 22 janvier, la Journée franco-allemande met en avant l’amitié unique entre nos deux pays et invite tout le monde à la célébrer – ou à la découvrir ! Dans ce cadre, le Fonds citoyen franco-allemand lance un appel à projets pour des initiatives réalisées entre le 15 et le 31 janvier ...\nPar\nFonds citoyen franco-allemand",
-    "financeur": "Fonds citoyen franco-allemand",
-    "date_publication": "2026-10-02",
-    "date_cloture": "2026-11-08",
-    "source": "Carenews",
-    "score": 2,
-    "premiere_detection": "2026-10-05"
-  },
   "fd485fd2995ebc452b0a10fa6127a8546bdb8179c5dc4bf66c46b99d089980c3": {
     "titre": "En commun la tech libre : Saison 2 - Share it et Fondation Free  -",
     "lien": "https://www.carenews.com/appels-a-projet/en-commun-la-tech-libre-saison-2-share-it-et-fondation-free",
@@ -1852,5 +1841,152 @@
     "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
     "score": 1,
     "premiere_detection": "2026-11-02"
+  },
+  "d6dd69d214c1565b7cae989bd76171d15810db4caaaeb8d55dc24e26f613660b": {
+    "titre": "Candidatez à l'Appel à Projets 2024 Ma Parole ! de la Fondation ...",
+    "lien": "https://www.carenews.com/appels-a-projet/candidatez-a-l-appel-a-projets-2024-ma-parole-de-la-fondation-engagement-medias",
+    "resume": "La maitrisedel'expression écrite et orale, ainsi que la confiance en soi pour s'exprimer, demeurentdespiliers fondamentauxdel'inclusiondesjeunes citoyens. Dans la continuitédeson engagement, la Fondation réitère sonappelàprojets« MaParole! », visantàsoutenirdesinitiatives etdesstructures d'intérêt général orientées vers la valorisationdel'expression. Ces ...",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 6,
+    "premiere_detection": "2026-11-09"
+  },
+  "1427778c248c05fd016d43445b165e8c8415b93c4e60a5e8c51139df19bab2b3": {
+    "titre": "Appel à candidatures \"Réinventer la photographie\" | Cnap",
+    "lien": "https://www.cnap.fr/actualites/evenements/appel-candidatures-reinventer-la-photographie",
+    "resume": "Dans la continuité des grandes commandes de l'État dans le domaine de laphotographie, ceprojetapour but de reconnaître et d'encourager la vitalité de la création contemporaine dans le champ étendu de laphotographie. L'appelàcandidatures Réinventer laphotographieviseàsélectionner 15 photographes ou artistes auteurs.",
+    "source": "Recherche web (appel à projets photographie jeunes)",
+    "score": 5,
+    "premiere_detection": "2026-11-09"
+  },
+  "f8bcb113a91616f145ec773b8f8ebb9a9b9cfa1be968b2e56fe54dababd05e68": {
+    "titre": "Interbibly - Actualités",
+    "lien": "https://www.interbibly.fr/actualites/detail/appel-a-projets-mediations-et-democratie-culturelle---encourager-la-participation-citoyenne-en-milieu-rural",
+    "resume": "La Fondation Daniel & Nina Carasso ouvre la 4 édition de l'appelàprojets« Médiations et démocratie culturelle » destinéàsoutenir des initiatives artistiques et culturelles conçues avec et pour les habitants dans les territoires ruraux. Il s'adresseàcelles et ceux qui souhaitent réinventer les relations entre culture etcitoyenneté, en faisant des habitants de véritables ...",
+    "source": "Recherche web (appel à projets art citoyenneté rural)",
+    "score": 5,
+    "premiere_detection": "2026-11-09"
+  },
+  "00e2c14633fe1aa6205d99d2099b8dbcc77bdd7a1f05c4996a2391f20b490469": {
+    "titre": "Appel à projets - Agir en faveur de la santé mentale des jeunes ...",
+    "lien": "https://www.unccas.org/appel-projets-agir-en-faveur-de-la-sante-mentale-des-jeunes-ultramarins",
+    "resume": "L' Institut national de la jeunesse et de l'éducation populaire (INJEP) publie un nouvelappelàprojetsintitulé \"Agir en faveur de lasantémentaledesjeunesultramarins\". Cetappelàprojetsest porté par le Fonds d'expérimentation pour la jeunesse (FEJ), piloté par l'INJEP, en partenariat avec la Direction générale des outre-mer (DGOM) et la Direction générale de l ...",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 5,
+    "premiere_detection": "2026-11-09"
+  },
+  "a37e4b82980f2af614d8b8daf2b96ce7dba940ed7dcc0df23a5c69ec8348b532": {
+    "titre": "Inclusion sociale : l'appel à projets « Ma parole ! » est lancé",
+    "lien": "https://www.jdanimation.fr/infos/inclusion-sociale-l-appel-projets-ma-parole-est-lance",
+    "resume": "Cetappelàprojetsdela Fondation engagement médias pour les jeunes valorise lesprojetsrépondantàla problématiquedel'inclusion sociale par l'éloquence et l'expression écrite et orale.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 5,
+    "premiere_detection": "2026-11-09"
+  },
+  "8548f250436258cfe6c3d69d5bd93b09055e779f335897fa27600be2f37f7fc0": {
+    "titre": "Santé mentale | Le Gouvernement lance un appel à projets pour soutenir ...",
+    "lien": "https://www.info.gouv.fr/actualite/le-gouvernement-lance-un-appel-a-projets-pour-soutenir-la-communication-d-une-association",
+    "resume": "Dans le cadre de la Grande cause nationale 2026 « Parlonssantémentale! », le Service d'information du Gouvernement (SIG) lance unappelàprojets(AAP)àdestination des associations afin de faire émerger une campagne de communication innovante en faveur de lasantémentaleavec un angleprévention.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 4,
+    "premiere_detection": "2026-11-09"
+  },
+  "1286df9551840cb5a27d150af1531d028bb4bccfbf43c352595f260836cbf3ce": {
+    "titre": "MSA - Appel à projets jeunes - MSA Marne Ardennes Meuse",
+    "lien": "https://marne-ardennes-meuse.msa.fr/lfp/evenements/apj",
+    "resume": "Acteur engagé sur les territoires ruraux, la MSA accorde une attention particulière aux 11-22 ans. Avec son dispositif d'appelàprojets, elle les accompagne et les aideàmettre en place leurs propres actions. Ainsi, la MSA favorise la prise de responsabilité des jeunes et leur participationàl'évolution des territoires ruraux.",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "aa1a3d1006181360a86f88b2c32eb433adbc02d314c2349357664a36bf55ec07": {
+    "titre": "PDFAppel de projet santé mentale positive jeunes",
+    "lien": "https://www.cisss-at.gouv.qc.ca/partage/SANTE-SCOLAIRE/Appel_projets_sante_mentale_positive_jeunes_DSPu_2026-2027.pdf",
+    "resume": "Renforcer les compétences du personnelscolaire(gestionnaires, enseignants, professionnels, personnel de soutien, personnel des services de garde, etc.) pour cultiver unesantémentalepositive chez lesjeunesde 5à25 ans. Développer les connaissances et compétences du personnelscolaireen matière de promotion et deprévention.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "2b1de842a59be179b0322707c5f127e931afe768757474926e8782331678610e": {
+    "titre": "Prévention et lutte contre le harcèlement scolaire",
+    "lien": "https://les-aides.nouvelle-aquitaine.fr/jeunesse/soutien-aux-associations-proposant-des-actions-de-prevention-et-de-lutte-contre-le-harcelement",
+    "resume": "L'appelàprojetssoutient les actions depréventionet de formation des associations au sein des établissementsscolaires.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "023437b3440aafe2c5dc9c5015008fc4e5713b46741f9b7bc0b12a83531e6ef1": {
+    "titre": "Appels à projets - Portail de l'agriculture wallonne",
+    "lien": "https://agriculture.wallonie.be/home/ruralite-et-foncier/ruralite/appels-a-projets.html",
+    "resume": "Acteurs et partenaires Centre de documentation Formulaire de contact Wallonie.be Mon Espace Portail de l'agriculture wallonne Politique et Economie Aides Produits Groupements et conseils EnvironnementRuralité et Foncier Recherche et développement",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "45cbb605b0aba29d5c0e6062c7ccf9437a6d768f7041d6527fb9079ec5294b1c": {
+    "titre": "Appel à projet en matière de Ruralité - Union des Villes et Communes de ...",
+    "lien": "https://www.uvcw.be/ruralite,,,tag-appel-a-projet/liste",
+    "resume": "Le Gouvernement lance unappelàprojets«Tiers-lieux ruraux », initié par la Ministre de laRuralité, en collaboration avec le Ministre de la Mobilité, en vue de d'assureràlaruralitéun développement durable et de répondre aux besoins de sa population (besoins de services de proximité, de services adaptés, de nouvelles ...",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "ba8a59879748f3b208123b3a13656147846a843d869a71adae43215570921e29": {
+    "titre": "Grand Est Innovation Sociale en Ruralité - GrandEst",
+    "lien": "https://www.grandest.fr/vos-aides-regionales/grand-est-innovation-sociale-en-ruralite/",
+    "resume": "Grand EstInnovationSociale enRuralité Aide régionale Vous souhaitez meneràbien unprojetde développement d'une activité ou d'un service socialement innovant en territoire rural ? Bénéficiez de l'aide régionale pouvant aller jusqu'à 50 000€ : Une avance de trésorerie dès le démarrage de votreprojet",
+    "source": "Recherche web (appel à projets tiers-lieu ruralité innovation)",
+    "score": 3,
+    "premiere_detection": "2026-11-09"
+  },
+  "f418bb5725c1bf19a5d340bb67ee642c5411cf419c4dbd9604db8e95f8ed5eea": {
+    "titre": "MSA - L'Appel à Projets Jeunes - MSA Auvergne",
+    "lien": "https://auvergne.msa.fr/lfp/evenements/apj",
+    "resume": "L'appelàprojetsjeunes se déroule en deux étapes : Un concours local : les groupes sélectionnés par le jury de la MSA reçoivent des bourses pour meneràbien leursprojets.",
+    "source": "Recherche web (appel à projets jeunesse numérique ruralité)",
+    "score": 2,
+    "premiere_detection": "2026-11-09"
+  },
+  "5b2a6d99ab385814c85bd473ac925cb93397cbd2bc7756ac1d498cf855fed9af": {
+    "titre": "Candidater à l'appel à projet - Fondation engagement médias pour les jeunes",
+    "lien": "https://engagementmedias.fr/la-selection/appel-a-projets/candidater/",
+    "resume": "LaFondationEngagementMédiaspour les Jeunes Pourquoi uneFondationcommune ? Il nous a semblé nécessaire, au sein du groupe France Télévisions ainsi qu'à FranceMédiasMonde et TV5Monde, de rassembler nos énergies autour d'un engagement sociétal. Lesmédiasde service public doivent avancer ensemble, regrouper leurs efforts pour être plus percutants, et ce notamment auprès ...",
+    "source": "Recherche web (fondation appel à projets éducation aux médias)",
+    "score": 2,
+    "premiere_detection": "2026-11-09"
+  },
+  "8632c7e86d55b1c8dc7e935395188e9f7b2f903800194ca416bbd9592446ba1c": {
+    "titre": "Réaliser un projet de médiation culturelle à destination des personnes ...",
+    "lien": "https://www.auvergnerhonealpes.fr/aides/realiser-un-projet-de-mediation-culturelle-destination-des-personnes-hospitalisees-agees-ou-0",
+    "resume": "Conduire une actionartistiqueet culturelle auprès des personnes hospitalisées dans des établissements sanitaires régionaux, privés ou publics, et des personnes âgées ou en situation de handicap suivies par des structures médico-sociales, publiques ou privées, relevant du champ de compétence de l'ARS.",
+    "source": "Recherche web (appel à projets art-thérapie médiation artistique)",
+    "score": 2,
+    "premiere_detection": "2026-11-09"
+  },
+  "464d6aaba6d94d98d52f3da674238a4a71a05ff7d45c75412a6533e6f41ddfaa": {
+    "titre": "Appel à projets 2026 - Nouveau Monde",
+    "lien": "https://www.fonds-nouveau-monde.org/appel-a-projets/",
+    "resume": "Découvrez l'appelàprojets2026 de Nouveau Monde, dédié auxprojetsd'intérêt général qui favorisent le bien-être mental des personnes.",
+    "source": "Recherche web (appel à projets prévention harcèlement scolaire santé mentale jeunes)",
+    "score": 2,
+    "premiere_detection": "2026-11-09"
+  },
+  "b12727f032dc0e3abfe67388dfdedd528e0f33024029979d371275249125d8d6": {
+    "titre": "Bien vivre dans les établissements de santé  -",
+    "lien": "https://www.carenews.com/appels-a-projet/bien-vivre-dans-les-etablissements-de-sante-0",
+    "resume": "Avec le mécénat « bien vivre dans les établissements de santé », Praemia REIM France soutient les initiatives qui améliorent l’expérience et la qualité de vie des personnes accueillies, de leurs proches et des soignants dans les établissements sanitaires et médico-sociaux. Pour l’édition ...\nPar",
+    "financeur": "",
+    "date_publication": "2026-11-04",
+    "date_cloture": "2026-12-15",
+    "source": "Carenews",
+    "score": 1,
+    "premiere_detection": "2026-11-09"
+  },
+  "eb7efe0bdc16794df842b868b808e8f366fc0c7a298c55096e0895d929c4c5cf": {
+    "titre": "AAP : Lutte contre l'isolement des personnes âgées - Pôle Services à la ...",
+    "lien": "https://www.psppaca.fr/AAP-Lutte-contre-l-isolement-des-personnes-agees",
+    "resume": "Un nouvelappelàprojetsnational viseàsoutenirdesinitiatives innovantes en faveurdespersonnes âgées, avec deux priorités : lutter contre leurisolementsocialet développer lelienintergénérationnel. Jusqu'à deuxprojetspourront bénéficier d'un financementde20 000 € chacun, pour une durée maximalede18 mois.",
+    "source": "Recherche web (appel à projets isolement lien social groupe de parole)",
+    "score": 1,
+    "premiere_detection": "2026-11-09"
   }
 }
